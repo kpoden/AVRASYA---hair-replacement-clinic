@@ -1,0 +1,12 @@
+body {
+    background-color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url("../img/header/header_bg.png");
+    background-size: contain;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNhc3MvX2dsb2JhbC5zYXNzIiwic2Fzcy9wYXJ0aWFscy9faGVhZGVyLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx5QkFBeUI7RUFDekIsU0FBUztFQUNULFVBQVUsRUFBQTs7QUFLZCxVQUFBO0FDUkE7RUFDSSw4Q0FBOEM7RUFDOUMsd0JBQXdCLEVBQUEiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICM5OTk5OTk7XG4gICAgbWFyZ2luOiAwO1xuICAgIHBhZGRpbmc6IDA7IH1cblxuXG5cblxuLypjb21tZW50Ki9cblxuIiwiaGVhZGVyIHtcbiAgICBiYWNrZ3JvdW5kOiB1cmwoJy4uL2ltZy9oZWFkZXIvaGVhZGVyX2JnLnBuZycpO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjsgfVxuIl19 */
