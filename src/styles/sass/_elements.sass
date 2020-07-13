@@ -1,11 +1,12 @@
 .soc-icon
     margin: 8px
-    .svg-eclipse
+    &:hover
+        transform: translateY(-3px)
+    &:hover  .svg-eclipse
+        fill: $beige
         transition: .2s
-        &:hover
-            fill: $beige
-        &:hover + .svg-icon
-            fill: $white
+    &:hover  .svg-icon
+        fill: $white
 .btn
     line-height: 52px
     width: 160px
@@ -18,3 +19,6 @@
     &:hover
         border-color: $white
         color: $white
+
+.bold
+    font-weight: bold

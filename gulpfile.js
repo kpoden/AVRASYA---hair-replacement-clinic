@@ -73,7 +73,7 @@ gulp.task('styles:build', function(){
         .pipe(csso({
             sourceMap: true
         }))
-        .pipe(rename("main.min.css"))
+        .pipe(rename("app.min.css"))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.styles));
 });
