@@ -1,0 +1,40 @@
+/* Large desktops and laptops */
+@mixin mw1180 {
+    @media (max-width: 1180px){
+        @content;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@mixin mw979 {
+    @media (max-width: 979px){
+        @content;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@mixin mw768 {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+/* Landscape phones and portrait tablets */
+@mixin mw600 {
+    @media (max-width: 600px){
+        @content;
+    }
+}
+
+/* Portrait phones and smaller */
+@mixin mw480 {
+    @media (max-width: 480px){
+        @content;
+    }
+}
+
+/* Iphone 5 */
+@mixin mw320 {
+    @media (max-width: 320px){
+        @content;
+    }
+}

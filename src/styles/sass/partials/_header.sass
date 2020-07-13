@@ -1,6 +1,6 @@
 header
     .bgpic
-        width: 100%
+        width: 100vw
         position: absolute
         top: 0
         left: 0
@@ -12,16 +12,18 @@ header
         align-items: center
         padding-top: 60px
         .header-top__logo
-        .header-top__nav
-            
-            width: 493px
+        .header-top__nav 
             font-size: 14px
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            width: 490px
+            +mw1180
+                display: none
             .nav__list
                 display: flex
                 justify-content: space-between
                 color: $white
                 .nav__item
+                    margin-right: 12px
                     &:hover
                         color: $beige
         .header-top__contacts
@@ -32,11 +34,18 @@ header
             align-items: center
             .header-phone
                 transition: .2s
-                padding-right: 14px
                 &:hover
                     color: $beige
         .header-top__consult
-            
+            padding-left: 10px   
             a
+                font-weight: 500
+                font-size: 14px
                 
-            
+    .header-main
+        color: $white
+        &__text
+            padding-top: 210px
+            font-weight: 500
+            font-size: 35px
+            line-height: 48px
