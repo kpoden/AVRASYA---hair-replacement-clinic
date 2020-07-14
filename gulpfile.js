@@ -15,6 +15,8 @@ var gulp = require('gulp'),
     cleancss = require('gulp-clean-css'),
     csso = require('gulp-csso'),
     sourcemaps = require('gulp-sourcemaps'),
+    imagemin = require('gulp-imagemin'),
+    imageminPngquant = require('imagemin-pngquant'),
     watch = require('gulp-watch'),
     browserSync = require('browser-sync').create();
 
@@ -92,7 +94,15 @@ gulp.task('scripts:build', function(){
 });
 
 gulp.task('img:build', function(){
-    return gulp.src(path.src.imgmax)
+    return gulp.src(path.src.imgmin)
+        .pipe(imagemin([
+            imageminPngquant({
+                speed: 5,
+                quality: [0.6, 0.8]
+            })
+        ]))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(gulp.src(path.src.imgmax))
         .pipe(gulp.dest(path.build.img));
 });
 
