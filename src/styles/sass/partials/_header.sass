@@ -1,16 +1,26 @@
 header
     .bgpic
-        width: 100vw
+        width: 100%
         position: absolute
         top: 0
         left: 0
         z-index: -1
+        +mw768
+            height: 100%
+            width: auto
+            left: -50%
+        +mw600
+            height: 100%
+            width: auto
+            left: -80%
+
 
     .header-top
         display: flex
         justify-content: space-between
         align-items: center
         padding-top: 60px
+        width: 100%
         .header-top__logo
         .header-top__nav 
             font-size: 14px
