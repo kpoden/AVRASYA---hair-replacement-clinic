@@ -74,14 +74,27 @@
     box-shadow: 0 10px 40px rgba(0,0,0,.5)
     padding: 100px 50px
     display: none
+    
     +mw1180
         display: block
+    +mw480
+        padding-left: 30px
     &__contacts
-        // width: 90%
-        // display: flex
-        // align-items: center
+
     &__phone
         font-size: 2em
+        display: block
+        min-width: 200px 
+        +mw979
+            font-size: 1.8em
+        +mw600
+            font-size: 1.5em
+        +mw480
+            font-size: 1.3em
+    .icons-group
+        display: block
+        height: 2em
+        padding-top: 20px
         
     &__address
         
@@ -90,7 +103,9 @@
 
     &__item
         padding-bottom: 30px
-        font-size: 22px
+        font-size: 1.4em
+        +mw600
+            font-size: 1.1em
 
 .active
     transform: translateX(0)
