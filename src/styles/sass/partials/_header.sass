@@ -2,23 +2,13 @@ header
     background: url('../img/header/header_bg.png')
     background-size: cover 
     background-position: center center   
-    height: 100vh
+    min-height: 100vh
     .header-inner
         width: 85%
         margin: 0 auto
         max-width: 1260px
-        // +mw768
-        //     width: 100%
+        position: relative
     
-    .bgpic
-        width: 100%
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
-        +mw768
-            height: 100%
-            width: auto
 
 
 
@@ -97,4 +87,45 @@ header
             +mw768
                 font-size: 1.2em
                 padding-top: 90px
-               
+
+        &__sub
+            display: flex
+            justify-content: space-between
+            max-width: 800px
+            margin-left: -30px
+            +mw768
+                flex-direction: column
+                margin-top: 40px            
+
+        &__subblock
+            display: flex
+            align-items: center
+            font-size: 13px
+            line-height: 23px
+            width: 250px
+            svg
+                min-width: 120px
+
+    .header-bottom
+
+        &__arrows
+            position: absolute
+            bottom: -100px
+            right: 50px
+            .arrows
+                display: inline-block
+                width: 50px
+                height: 50px
+                border-radius: 50px
+                position: relative
+                &:hover
+                   background: #FFFFFF
+                   box-shadow: 0px 8px 20px rgba(214, 222, 226, 0.42)
+                
+                              
+            .svg-arrow-l
+
+            .svg-arrow-r
+                svg
+                    transform: rotate(180deg)
+                    
