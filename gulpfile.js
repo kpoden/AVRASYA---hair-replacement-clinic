@@ -36,6 +36,7 @@ var path = {
         styles: 'src/styles/*.sass',
         imgmin: 'src/img/min/**/*.*',
         imgmax: 'src/img/max/**/*.*',
+        imgsvg: 'src/img/svg/**/*.*',
         scripts: 'src/scripts/**/*.js',
         fonts: 'src/fonts/**/*.*'
     },
@@ -103,6 +104,8 @@ gulp.task('img:build', function(){
         ]))
         .pipe(gulp.dest(path.build.img))
         .pipe(gulp.src(path.src.imgmax))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(gulp.src(path.src.imgsvg))
         .pipe(gulp.dest(path.build.img));
 });
 
