@@ -95,16 +95,41 @@ header
             margin-left: -30px
             +mw768
                 flex-direction: column
-                margin-top: 40px            
+                margin-top: 40px
+                margin-left: 40px 
+            +mw480
+                margin: 0
 
         &__subblock
             display: flex
             align-items: center
+            justify-content: center
             font-size: 13px
             line-height: 23px
-            width: 250px
+            width: 270px
+            +mw768
+                span
+                    flex-shrink: 0
+                    width: 190px
+                    padding-bottom: 30px
+           
             svg
-                min-width: 120px
+                flex-shrink: 0
+                height: 60px
+                width: 60px
+                padding-right: 20px
+                text-align: center
+                display: block
+                +mw768
+                    width: 150px
+                    padding-right: 0   
+                +mw480
+                    display: none
+
+       
+
+
+                
 
     .header-bottom
 
@@ -128,10 +153,13 @@ header
                     position: absolute
                     top: 50%
                     left: 50%
+                    width: 30px
+                    height: 30px
                     
             .svg-arrow-l
                 svg
                     transform: translate(-30%, -50%)
+                    
             .svg-arrow-r
                 svg
                     transform: translate(-70%, -50%) rotate(180deg) 
