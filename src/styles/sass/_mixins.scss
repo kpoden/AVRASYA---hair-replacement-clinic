@@ -1,3 +1,15 @@
+/* Special size for gallery */
+@mixin mw1392 {
+    @media (max-width: 1392px){
+        @content;
+    }
+}
+/* Special size for gallery */
+@mixin mw1440 {
+    @media (max-width: 1440px){
+        @content;
+    }
+}
 /* Large desktops and laptops */
 @mixin mw1180 {
     @media (max-width: 1180px){

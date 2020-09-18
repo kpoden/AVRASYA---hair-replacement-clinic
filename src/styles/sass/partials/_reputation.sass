@@ -17,6 +17,7 @@
 
     &__advatages
         display: flex
+        padding-bottom: 110px
         
     .advantages-item
         
@@ -29,15 +30,36 @@
 .reputation__images
     display: flex
     align-items: center
-    justify-content: space-between
+    justify-content: center
     margin: -10px
+    
+
+    +mw1180
+        flex-direction: column
+
     img
         margin: 10px
+        transition: .3s
 
+    .rep-group
+
+        display: flex
     .rep-col
         display: flex
         flex-direction: column
     .rep-row
         display: flex
         flex-wrap: nowrap
+
+    .rep-3
+
+        +mw1180
+            display: none
+    
+    .rep-3_1
+        display: none
+
+        +mw1180 
+            display: flex
+            flex-direction: column
 
