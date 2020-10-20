@@ -17,6 +17,13 @@
     }
 }
 
+/* Special size for gallery */
+@mixin mw1030 {
+    @media (max-width: 1030px){
+        @content;
+    }
+}
+
 /* Landscape tablets and medium desktops */
 @mixin mw979 {
     @media (max-width: 979px){
