@@ -16,10 +16,6 @@ $(document).ready(function() {
         e.stopPropagation();
       });
 
-      $('.grid').masonry({
-        itemSelector: '.grid-item',
-        gutter: 20,
-        fitWidth: true
-      });
+
 
 });
