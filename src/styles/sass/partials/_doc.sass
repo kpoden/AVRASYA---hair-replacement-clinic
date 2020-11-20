@@ -1,0 +1,65 @@
+.doc
+    max-width: 1260px
+    display: flex
+    margin: 0 auto
+    position: relative
+
+    &__image
+        position: relative
+        margin-left: -70px
+        bottom: -50px
+        z-index: -10
+        +mw1392
+            margin: 0
+            bottom: -150px
+            left: -50px
+        +mw1030
+            display: none 
+
+
+    &__text
+        position: absolute
+        right: 0
+        width: 700px
+        height: 546px
+        box-shadow: 0px 12px 42px rgba(214, 222, 226, 0.42)
+        padding: 31px 59px 46px
+        z-index: 10
+    
+        +mw1392
+            width: 420px
+            height: auto
+            right: 30px
+        +mw1030
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+        
+
+
+        h4
+            font-weight: 500
+            font-size: 35px
+            line-height: 48px
+            margin: 0
+            padding-bottom: 30px
+            +mw600
+                font-size: 25px
+                line-height: 30px
+
+        p
+            font-size: 16px
+            line-height: 43px
+            padding-bottom: 30px
+
+            +mw1392
+                padding-bottom: 10px
+            +mw600
+                font-size: 14px
+                line-height: 23px
+    &__signature
+        display: flex
+        align-items: start
+        .sign
+            padding-top: 20px
+            padding-left: 30px

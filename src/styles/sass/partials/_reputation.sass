@@ -2,6 +2,7 @@
     width: 85%
     max-width: 1260px
     margin: 0 auto
+    padding-bottom: 200px
 
     &__header
         font-size: 35px
@@ -51,10 +52,33 @@
     +mw1030
         flex-direction: column
 
+    a
+        display: block
+        position: relative
+        width: 100%
+        height: 100%
+    a:before
+        position: absolute
+        top: 60%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 50px
+        height: 50px 
+        content: ''
+        background: url('../img/reputation/plus.png')
+        z-index: 1
+        opacity: 0
+        transition: .4s
+
+    a:hover:before
+        top: 50%
+        opacity: 1
+
     img
         margin: 10px
         transition: .3s
         position: relative
+
         &:hover
             filter: brightness(0.5)
             
@@ -63,8 +87,8 @@
             
 
     .rep-group
-
         display: flex
+
     .rep-col
         display: flex
         flex-direction: column
