@@ -1,0 +1,41 @@
+.fue
+    background: #F9F9F9
+    padding-bottom: 50px
+
+    &__text
+        max-width: 930px
+        padding-bottom: 45px
+
+    &__block
+        display: flex
+        align-items: center
+        padding-bottom: 40px
+
+        +mw1030
+            flex-direction: column
+
+    &__image
+        position: relative
+        img
+            width: 100%
+        svg
+            position: absolute
+            width: 88px
+            height: 88px
+            right: -44px
+            bottom: 50%
+            transform: translateY(-50%)
+
+            +mw1030
+                bottom: -44px
+                right: 50%
+                transform: translateX(50%)
+    .fue__block p
+        max-width: 511px
+        padding-left: 115px
+        font-size: 18px
+        line-height: 37px
+
+        +mw1180
+            padding-left: 50px
+            padding-top: 30px
