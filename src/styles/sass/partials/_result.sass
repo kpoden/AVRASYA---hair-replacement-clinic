@@ -1,0 +1,27 @@
+.result
+    text-align: center
+
+    &__header
+        text-align: center
+        padding-bottom: 50px
+    .beer-slider
+        margin: 0 auto
+        width: 800px
+        img
+            width: 100% 
+        .beer-reveal
+            img
+                width: 800px!important
+                +mw979
+                    width: 600px!important
+                +mw768
+                    width: 400px!important
+                +mw600
+                    width: 280px!important
+        +mw979
+            width: 600px
+        +mw768
+            width: 400px
+        +mw600
+            width: 280px
+        

@@ -26,6 +26,7 @@ var path = {
     build: {
         html: 'build/',
         styles: 'build/styles/',
+        libs: 'build/libs',
         img: 'build/img/',
         scripts: 'build/scripts/',
         fonts: 'build/fonts/'
@@ -34,6 +35,7 @@ var path = {
     src: {
         html: 'src/*.html',
         styles: 'src/styles/*.sass',
+        libs: 'src/libs/**.*',
         imgmin: 'src/img/min/**/*.*',
         imgmax: 'src/img/max/**/*.*',
         imgsvg: 'src/img/svg/**/*.*',
@@ -78,7 +80,7 @@ gulp.task('styles:build', function(){
         }))
         .pipe(rename("app.min.css"))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.styles));
+        .pipe(gulp.dest(path.build.styles))
 });
 
 gulp.task('scripts:build', function(){
@@ -114,8 +116,13 @@ gulp.task('fonts:build', function(){
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('libs:build', function(){
+    return gulp.src(path.src.libs)
+        .pipe(gulp.dest(path.build.libs))
+});
+
 gulp.task('build', gulp.series(
-        'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build'])
+        'clean', gulp.series(['html:build', 'styles:build', 'scripts:build', 'img:build', 'fonts:build', 'libs:build'])
     )
 );
 
