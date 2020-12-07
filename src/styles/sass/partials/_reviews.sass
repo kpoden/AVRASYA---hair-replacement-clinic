@@ -1,0 +1,70 @@
+.reviews
+    &__header
+        padding-bottom: 66px
+    &__videos
+        display: flex
+        justify-content: center
+        align-items: center
+        +mw1496
+            flex-direction: column
+        
+        .big-video
+            margin-right: 20px
+            +mw1496
+                margin: 0 0 20px
+            iframe
+                width: 620px
+                height: 526px
+            +mw688
+                display: none
+
+        .slider-wrap
+            position: relative
+            .small-videos
+                width: 620px
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                +mw688
+                    width: 390px
+                +mw480
+                    width: 300px
+                iframe
+                    width: 300px  
+                    height: 253px
+                .top-row
+                    margin-bottom: 20px
+                    margin-top: -4px
+                .hidden-video
+                    display: none
+                    +mw688
+                        display: block
+
+            .slider-arrows
+                display: none
+                content: ''
+                border: solid #464545
+                border-width: 0 3px 3px 0
+                width: 50px
+                height: 50px
+                position: absolute
+                top: 40%
+                cursor: pointer
+                opacity: 0.5
+                transition: .2s
+                &:hover
+                    opacity: 1
+                +mw688
+                    display: block
+            .prev_arrow
+                left: -50px
+                transform: rotate(135deg)
+                +mw600
+                    left: -30px
+            .next_arrow
+                right: -50px
+                transform: rotate(-45deg)
+                +mw600
+                    right: -30px
+

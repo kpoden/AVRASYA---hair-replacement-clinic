@@ -5,6 +5,18 @@
     }
 }
 /* Special size for gallery */
+@mixin mw1496 {
+    @media (max-width: 1496px){
+        @content;
+    }
+}
+/* Special size for gallery */
+@mixin mw688 {
+    @media (max-width: 688px){
+        @content;
+    }
+}
+/* Special size for gallery */
 @mixin mw1440 {
     @media (max-width: 1440px){
         @content;

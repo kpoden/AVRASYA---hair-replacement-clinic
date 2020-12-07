@@ -35,7 +35,7 @@ var path = {
     src: {
         html: 'src/*.html',
         styles: 'src/styles/*.sass',
-        libs: 'src/libs/**.*',
+        libs: 'src/libs/**/**.*',
         imgmin: 'src/img/min/**/*.*',
         imgmax: 'src/img/max/**/*.*',
         imgsvg: 'src/img/svg/**/*.*',
