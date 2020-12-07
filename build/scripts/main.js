@@ -61,7 +61,8 @@ $(document).ready(function() {
         fade: true,
         draggable: true,
         prevArrow: $('.prev_arrow'),
-        nextArrow: $('.next_arrow')
+        nextArrow: $('.next_arrow'),
+        dots: true
       });
 
       //end of video slider script
