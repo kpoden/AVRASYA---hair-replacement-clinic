@@ -67,4 +67,18 @@ $(document).ready(function() {
 
       //end of video slider script
 
+      $('.consult__fields input').focus( function(){
+        $(this).attr('placeholder', ''); 
+      })
+
+      $('.consult__fields input').blur( function(){
+        if ($(this).attr('id')=='consult_name') {
+          $(this).attr('placeholder', 'Ваше имя:');
+          console.log(this);
+        } else {
+          $(this).attr('placeholder', 'Телефон:');
+          console.log(111);
+        }
+      })
+
 });
