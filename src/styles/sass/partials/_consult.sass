@@ -3,15 +3,24 @@
     background-size: cover
     height: 727px
     color: $white
+    +mw768
+        height: 630px
     &__wrap
         display: flex
         justify-content: space-between
         align-items: center
+        +mw768
+            justify-content: center
+    &__form
+        +mw768
+            text-align: center
     &__header
         font-size: 28px
         line-height: 48px
         padding-bottom: 20px
         padding-top: 0
+        +mw768
+            padding-top: 30px
     &__text
         font-size: 18px
         line-height: 30px
@@ -26,19 +35,78 @@
             height: 50px
             width: 260px
             padding-left: 20px
+            +mw1440
+                width: 150px
+            +mw1180
+                width: 80%
+                margin: 0 auto 30px
             &:first-child
                 margin-right: 35px
+                margin-bottom: 15px
+                +mw768
+                    margin: 0 0 15px 0
             &::placeholder
                 color: $grey
                 font-size: 15px
+    &__checkbox
+        .container
+            position: relative
+            margin-right: 12px
+            cursor: pointer
+            user-select: none
+            padding-left: 35px
+            
+
+            &:hover .checkmark
+                background-color: $beige
+                
+            input
+                position: absolute
+                opacity: 0
+                // width: 0
+                // height: 0
+                &:checked ~ .checkmark
+                    background-color: $beige
+                    &::after
+                        display: block
+                    
+            .checkmark
+                position: absolute
+                top: 0
+                left: 0
+                height: 18px
+                width: 18px
+                border-radius: 3px
+                background-color: #eee
+                transition: .3s
+                &::after
+                    content: ''
+                    position: absolute
+                    display: none
+                    left: 3px
+                    top: -7px
+                    width: 10px
+                    height: 20px
+                    border: solid #fff
+                    border-width: 0 4px 4px 0
+                    transform: rotate(45deg)
+
     &__button 
         margin-top: 23px
         background-color: $beige
         color: $white
         font-size: 14px
         width: 300px
+        font-weight: bold
+        +mw1180
+            margin: 23px auto 0
+            width: 90%
 
     &__img
         margin-top: -23px
-
+        +mw1030
+            display: block
+            width: 300px
+        +mw768
+            display: none
             
