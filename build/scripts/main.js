@@ -81,6 +81,13 @@ $(document).ready(function() {
         }
       })
 
-    
+    // infobank drop-down menu code
+      $('.infobank__title').click(function() {
+        $(this).toggleClass('open').next().slideToggle();
+        $('.infobank__title').not(this).removeClass('open').next().slideUp();
+        $('.arrow').toggleClass('arrow-up');
+      })
+
+      
 
 });
