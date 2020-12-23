@@ -1,0 +1,53 @@
+.remember-wrap
+    background: url('../img/remember/remember-bg.png')
+    background-size: cover
+    .remember
+        color: $white
+
+        &__header
+            padding: 150px 0 30px
+            +mw768
+                padding-top: 50px
+        &__text
+            padding-bottom: 60px
+            font-size: 20px
+            +mw768
+                padding-bottom: 20px
+
+        &__group
+            display: flex
+            justify-content: space-between
+            padding-bottom: 60px
+            +mw768
+                flex-direction: column
+                align-items: center
+                padding-bottom: 20px
+
+        &__block
+            border: 2px $white solid
+            display: flex
+            flex-direction: column
+            padding: 60px 50px 0 50px
+            margin-right: 20px
+            width: 33%
+            font-size: 17px
+            line-height: 32px
+            +mw1180
+                height: auto
+
+            +mw979
+                padding: 50px 20px 0 20px
+            +mw768
+                width: 80%
+                margin: 0 0 20px 0
+                padding-top: 20px
+            &:last-child
+                margin-right: 0
+            svg
+                width: 73px
+                height: 73px
+
+        &__bottom-text
+            padding-bottom: 70px
+            +mw768
+                padding-bottom: 30px
