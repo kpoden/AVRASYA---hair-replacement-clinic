@@ -85,7 +85,8 @@ $(document).ready(function() {
       $('.infobank__title').click(function() {
         $(this).toggleClass('open').next().slideToggle();
         $('.infobank__title').not(this).removeClass('open').next().slideUp();
-        $('.arrow').toggleClass('arrow-up');
+        $('.infobank__arrow', this).toggleClass('arrow-up');
+        console.log(this);
       })
 
       
