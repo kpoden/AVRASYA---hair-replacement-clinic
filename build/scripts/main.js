@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    
+    // wow js init
+      $(function(){
+        new WOW().init(); 
+      });
+
     // mobile menu script
     $('.burger-menu').on('click', function(){
         $('.mobile-menu').toggleClass("active");
@@ -87,8 +93,6 @@ $(document).ready(function() {
         $('.infobank__title').not(this).removeClass('open').next().slideUp();
         $('.infobank__arrow', this).toggleClass('arrow-up');
         console.log(this);
-      })
-
-      
+      }) 
 
 });
