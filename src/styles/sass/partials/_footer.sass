@@ -1,7 +1,12 @@
 .footer
     display: flex
     justify-content: space-between
-    padding-top: 88px
+    padding: 88px 0 50px
+    flex-wrap: wrap
+    +mw1440
+        flex-direction: column-reverse
+        justify-content: center
+        align-items: center
     h4
         font-size: 16px
         line-height: 20px
@@ -10,33 +15,71 @@
         transition: .3s
         &:hover
             margin-top: -7px
+        +mw1440
+             &:hover
+                 margin-top: -25px
+
 
 
     &__logo
         width: 25%
+        padding-bottom: 30px
+        +mw1440
+            width: auto
 
     &__foruser
         width: 30%
+        +mw1440
+            width: auto
+            text-align: center
     &__links
         font-size: 14px
         line-height: 36px
         text-decoration: underline
+        +mw1440
+            padding-bottom: 15px
     &__contacts
         width: 45%
         padding-right: 30px
+        +mw1440
+            width: auto
+            text-align: center
         svg
             width: 18px
             height: 18px
+        .phone-icon
+            +mw1440
+                margin-top: -30px
+                &:hover
+                    margin-top: -45px
     &__phone
         font-weight: 600
         font-size: 20px
         line-height: 24px
+        +mw1440
+            width: 200px
+            padding-bottom: 30px
+    
+        
     &__button
         width: 300px
+        +mw1440
+            margin-bottom: 15px
         &:hover
             background-color: $beige
     &__group
         display: flex
         align-items: center
+        flex-wrap: wrap
         justify-content: space-between
         padding-top: 20px
+        +mw1440
+            justify-content: center
+            flex-direction: column
+    &__subgroup
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+        svg
+            margin: -15px 10px 0 0
