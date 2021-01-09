@@ -1,10 +1,26 @@
 header
-    background: url('../img/header/header_bg.png')
-    background-size: cover 
-    background-position: center center   
+    background: #eee
+    
+    height: 100%
+
+    .header-bg
+        overflow: hidden
+        max-height: 1000px
+        position: absolute
+        // top: 0
+        // left: 50%
+        // transform: translate(-50%)
+        
+        img
+            display: block
+            // min-height: 100%
+            min-width: 100vw
+            z-index: 0
+
     .header-inner
         position: relative
         min-height: 1000px
+
     
     .header-top
         display: flex
@@ -12,6 +28,7 @@ header
         align-items: center
         padding-top: 60px
         width: 100%
+        z-index: 1
         +mw979
             padding-top: 20px
 

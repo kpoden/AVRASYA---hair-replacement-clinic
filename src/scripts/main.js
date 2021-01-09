@@ -74,6 +74,21 @@ $(document).ready(function() {
         dots: true
       });
 
+
+      $('.header-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        draggable: true,
+        prevArrow: $('.svg-arrow-l'),
+        nextArrow: $('.svg-arrow-r'),
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000
+      });
+
       //end of video slider script
 
       $('.consult__fields input').focus( function(){
