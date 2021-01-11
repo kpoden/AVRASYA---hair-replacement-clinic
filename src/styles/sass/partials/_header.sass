@@ -1,6 +1,7 @@
 header
     background: #eee
     height: 100%
+    overflow: hidden
 
     .header-bg
         overflow: hidden
@@ -9,7 +10,10 @@ header
         z-index: 0
         
         img
-            min-width: 100vw
+            min-width: 100vw !important
+            width: auto !important
+            min-height: 100% !important
+            
 
     .header-inner
         position: relative

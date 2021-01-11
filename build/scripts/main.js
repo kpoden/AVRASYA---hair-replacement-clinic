@@ -20,6 +20,7 @@ $(document).ready(function() {
         if ($('.background-mobile').is(e.target)){
           $('.mobile-menu').removeClass('active');
           $('.background-mobile').removeClass("bgactive");
+          $('.popup').fadeOut();
         }
         e.stopPropagation();
       });
@@ -81,7 +82,8 @@ $(document).ready(function() {
         items: 1,
         autoplay: true,
         autoplayTimeout: 8000,
-        loop: true
+        loop: true,
+        dots: false
       });
 
       $('.svg-arrow-r').on('click', function() {
@@ -116,3 +118,19 @@ $(document).ready(function() {
       }) 
 
 });
+
+
+  //pop up functions
+    function popup(e) {
+      $('.background-mobile').addClass("bgactive");
+      $('.background-mobile').fadeIn('fast');
+      $('.popup').fadeIn();
+      e.preventDefault();
+      console.log(e);
+    }
+
+
+    $('.popup-close').on('click', function(){
+      $('.popup').fadeOut();
+      $('.background-mobile').removeClass("bgactive");
+    });

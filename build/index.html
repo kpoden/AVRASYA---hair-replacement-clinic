@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
 
     <title>AVRASYA</title>
@@ -20,414 +20,426 @@
 
 <body>
     <div class="container">
-        <div class="background-mobile"></div>
-
-        <header>
-            <div class="header-bg owl-carousel owl-theme">
-                <div class="header-bg-item">
-                    <img src="img/header/header_bg1.png" alt="">
-                </div>
-                <div class="header-bg-item">
-                    <img src="img/header/header_bg2.png" alt="">
-                </div>
-                <div class="header-bg-item">
-                    <img src="img/header/header_bg3.png" alt="">
-                </div>
+        <div class="popup">
+            <h4>Заказать консультацию</h4>
+            <div class="close popup-close"></div>
+            <div class="consult__fields">
+                <input type="text" name="Name"  placeholder="Ваше имя:">
+                <input type="text" name="Phone" placeholder="Телефон:">
             </div>
+            <div class="consult__checkbox">
+                <label class="container">
+                    <p>Я согласен с правами обработки персональных данных</p> 
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <button class="consult__button btn">Хочу консультацию</button>
+        </div>
+    </div>
+    <div class="background-mobile"></div>
 
-            <div class="header-inner inner-wrap">
-           
+    <header>
+        <div class="header-bg owl-carousel owl-theme">
+            <div class="header-bg-item">
+                <img src="img/header/header_bg1.png" alt="">
+            </div>
+            <div class="header-bg-item">
+                <img src="img/header/header_bg2.png" alt="">
+            </div>
+            <div class="header-bg-item">
+                <img src="img/header/header_bg3.png" alt="">
+            </div>
+        </div>
+
+        <div class="header-inner inner-wrap">
+
             <!-- mobile menu -->
-                <div class="mobile-menu">
-                    <div class="close">
-                    </div>
-                    <div class="mobile-menu__contacts">
-                        <a class="mobile-menu__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
-                        <div class="icons-group">
-                            <a href="#" class="soc-icon mobile-soc-icon">
-                                <svg id="mobile-icon-wa" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                                    <ellipse cx="18" cy="17.5" rx="18" ry="17.5" fill="white" class="svg-eclipse" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd" class="svg-icon"
-                                        d="M23.3149 11.6899C21.9038 10.2788 20.0288 9.5 18.0317 9.5C13.9155 9.5 10.5635 12.8496 10.5635 16.9658C10.561 18.2817 10.9053 19.5659 11.5596 20.6987L10.5 24.5684L14.46 23.5283C15.5488 24.124 16.7793 24.4365 18.0293 24.439H18.0317C22.1479 24.439 25.4976 21.0894 25.5 16.9707C25.5 14.9761 24.7236 13.1011 23.3149 11.6899ZM18.0317 23.1768H18.0293C16.916 23.1768 15.8223 22.8765 14.8701 22.3125L14.6431 22.1782L12.292 22.7935L12.9194 20.5034L12.7729 20.269C12.1504 19.2803 11.8232 18.1377 11.8232 16.9658C11.8232 13.5454 14.6089 10.7622 18.0342 10.7622C19.6919 10.7622 21.2495 11.4092 22.4214 12.5811C23.5933 13.7554 24.2378 15.313 24.2378 16.9707C24.2378 20.3936 21.4521 23.1768 18.0317 23.1768ZM21.4351 18.5283C21.2495 18.4355 20.3315 17.9839 20.1606 17.9229C19.9897 17.8594 19.8652 17.8301 19.7407 18.0156C19.6162 18.2036 19.2598 18.6235 19.1499 18.748C19.0425 18.8701 18.9326 18.8872 18.7471 18.7944C18.5591 18.7017 17.9585 18.5039 17.2456 17.8667C16.6914 17.3735 16.3154 16.7607 16.208 16.5752C16.0981 16.3872 16.1958 16.2871 16.2886 16.1943C16.374 16.1113 16.4766 15.9771 16.5693 15.8672C16.6621 15.7598 16.6938 15.6816 16.7573 15.5571C16.8184 15.4326 16.7866 15.3228 16.7402 15.23C16.6938 15.1372 16.3203 14.2168 16.1641 13.8433C16.0127 13.4795 15.8589 13.5308 15.7441 13.5234C15.6367 13.5186 15.5122 13.5186 15.3877 13.5186C15.2632 13.5186 15.0605 13.5649 14.8896 13.7529C14.7188 13.9385 14.2378 14.3901 14.2378 15.3081C14.2378 16.2261 14.9067 17.1147 14.9995 17.2393C15.0923 17.3613 16.315419.2461 18.188 20.0542C18.6323 20.2471 18.979 20.3618 19.25 20.4473C19.6968 20.5889 20.1045 20.5693 20.4268 20.5229C20.7856 20.4692 21.5303 20.0713 21.6865 19.6343C21.8403 19.1997 21.8403 18.8262 21.7939 18.748C21.7476 18.6699 21.623 18.6235 21.4351 18.5283Z"
-                                        fill="#7491A5" fill-opacity="0.6" />
-                                </svg>
-                            </a>
-                            <a href="#" class="soc-icon mobile-soc-icon">
-                                <svg id="mobile-icon-tg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                                    <ellipse cx="18" cy="17.5" rx="18" ry="17.5" fill="white" class="svg-eclipse" />
-                                    <path class="svg-icon"
-                                        d="M22.8497 11.1227C22.6713 11.131 22.5032 11.1829 22.3538 11.241H22.3517C22.2002 11.3012 21.4801 11.6042 20.3865 12.0628C19.2928 12.5235 17.8734 13.1212 16.4644 13.7147C13.6504 14.8996 10.8842 16.0659 10.8842 16.0659L10.9174 16.0534C10.9174 16.0534 10.7264 16.1157 10.5272 16.2526C10.4255 16.319 10.3135 16.4103 10.2159 16.5535C10.1184 16.6967 10.0396 16.9167 10.0686 17.1429C10.1163 17.5268 10.3654 17.7571 10.5438 17.8837C10.7244 18.0124 10.8966 18.0726 10.8966 18.0726H10.9008L13.4948 18.9462C13.611 19.3198 14.2854 21.5361 14.4473 22.0466C14.5427 22.3516 14.6361 22.5425 14.7523 22.6878C14.8084 22.7625 14.8748 22.8248 14.9536 22.8746C14.9847 22.8932 15.0179 22.9078 15.0511 22.9202C15.0615 22.9264 15.0719 22.9285 15.0844 22.9306L15.0574 22.9244C15.0657 22.9264 15.0719 22.9327 15.0781 22.9347C15.0989 22.941 15.1134 22.9431 15.1404 22.9472C15.5513 23.0717 15.8812 22.8165 15.8812 22.8165L15.8999 22.8019L17.4314 21.4074L19.9984 23.3768L20.0565 23.4017C20.5919 23.6362 21.1335 23.5054 21.4199 23.2751C21.7084 23.0427 21.8204 22.7459 21.8204 22.7459L21.8391 22.6982L23.823 12.5359C23.879 12.2848 23.8936 12.0503 23.8313 11.8221C23.769 11.5938 23.6093 11.3801 23.4163 11.2659C23.2212 11.1497 23.0282 11.1144 22.8497 11.1227ZM22.7958 12.2122C22.7937 12.2454 22.7999 12.2413 22.7854 12.3056V12.3118L20.8202 22.3682C20.8119 22.3827 20.7974 22.4139 20.7579 22.445C20.7164 22.4782 20.6832 22.499 20.511 22.4305L17.3712 20.0232L15.4745 21.7519L15.8729 19.2077C15.8729 19.2077 20.7911 14.6236 21.0028 14.4264C21.2145 14.2293 21.1439 14.1878 21.1439 14.1878C21.1584 13.9471 20.8243 14.1172 20.8243 14.1172L14.356 18.1244L14.3539 18.1141L11.2535 17.0702V17.0682C11.2515 17.0682 11.2473 17.0661 11.2452 17.0661C11.2473 17.0661 11.2618 17.0599 11.2618 17.0599L11.2784 17.0516L11.295 17.0453C11.295 17.0453 14.0634 15.8791 16.8773 14.6941C18.2864 14.1006 19.7058 13.503 20.7974 13.0423C21.8889 12.5837 22.6962 12.2475 22.7418 12.2288C22.7854 12.2122 22.7646 12.2122 22.7958 12.2122Z"
-                                        fill="#7491A5" fill-opacity="0.6" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="mobile-menu__address"></div>
-                    </div>
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item"><a href="#">Клиника</a></li>
-                        <li class="mobile-menu__item"><a href="#">Процедуры</a></li>
-                        <li class="mobile-menu__item"><a href="#">Цены</a></li>
-                        <li class="mobile-menu__item"><a href="#">Организация</a></li>
-                        <li class="mobile-menu__item"><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-
-                <div class="header-top">
-                    <div class="header-top__logo">
-                        <img src="img/header/logo.png" alt="Logo">
-                    </div>
-                    <div class="header-top__nav">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a href="#">Клиника</a></li>
-                            <li class="nav__item"><a href="#">Процедуры</a>
-                                <ul class="submenu firstlevel">
-                                    <li><a href="#">Осмотр</a></li>
-                                    <li class="opener"><a href="#">Пересадка</a>
-                                        <ul class="submenu seclevel">
-                                            <li><a href="#">До 1000 графов</a></li>
-                                            <li><a href="#">До 2000 графов</a></li>
-                                            <li><a href="#">До 3000 графов</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Профилактика</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__item"><a href="#">Цены</a></li>
-                            <li class="nav__item"><a href="#">Организация</a></li>
-                            <li class="nav__item"><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="header-top__contacts">
-                        <a class="header-phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
-                        <a href="#" class="soc-icon">
-                            <svg id="icon-wa" width="36" height="35" viewBox="0 0 36 35" fill="none">
+            <div class="mobile-menu">
+                <div class="close"></div>
+                <div class="mobile-menu__contacts">
+                    <a class="mobile-menu__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    <div class="icons-group">
+                        <a href="#" class="soc-icon mobile-soc-icon">
+                            <svg id="mobile-icon-wa" width="36" height="35" viewBox="0 0 36 35" fill="none">
                                 <ellipse cx="18" cy="17.5" rx="18" ry="17.5" fill="white" class="svg-eclipse" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" class="svg-icon"
-                                    d="M23.3149 11.6899C21.9038 10.2788 20.0288 9.5 18.0317 9.5C13.9155 9.5 10.5635 12.8496 10.5635 16.9658C10.561 18.2817 10.9053 19.5659 11.5596 20.6987L10.5 24.5684L14.46 23.5283C15.5488 24.124 16.7793 24.4365 18.0293 24.439H18.0317C22.1479 24.439 25.4976 21.0894 25.5 16.9707C25.5 14.9761 24.7236 13.1011 23.3149 11.6899ZM18.0317 23.1768H18.0293C16.916 23.1768 15.8223 22.8765 14.8701 22.3125L14.6431 22.1782L12.292 22.7935L12.9194 20.5034L12.7729 20.269C12.1504 19.2803 11.8232 18.1377 11.8232 16.9658C11.8232 13.5454 14.6089 10.7622 18.0342 10.7622C19.6919 10.7622 21.2495 11.4092 22.4214 12.5811C23.5933 13.7554 24.2378 15.313 24.2378 16.9707C24.2378 20.3936 21.4521 23.1768 18.0317 23.1768ZM21.4351 18.5283C21.2495 18.4355 20.3315 17.9839 20.1606 17.9229C19.9897 17.8594 19.8652 17.8301 19.7407 18.0156C19.6162 18.2036 19.2598 18.6235 19.1499 18.748C19.0425 18.8701 18.9326 18.8872 18.7471 18.7944C18.5591 18.7017 17.9585 18.5039 17.2456 17.8667C16.6914 17.3735 16.3154 16.7607 16.208 16.5752C16.0981 16.3872 16.1958 16.2871 16.2886 16.1943C16.374 16.1113 16.4766 15.9771 16.5693 15.8672C16.6621 15.7598 16.6938 15.6816 16.7573 15.5571C16.8184 15.4326 16.7866 15.3228 16.7402 15.23C16.6938 15.1372 16.3203 14.2168 16.1641 13.8433C16.0127 13.4795 15.8589 13.5308 15.7441 13.5234C15.6367 13.5186 15.5122 13.5186 15.3877 13.5186C15.2632 13.5186 15.0605 13.5649 14.8896 13.7529C14.7188 13.9385 14.2378 14.3901 14.2378 15.3081C14.2378 16.2261 14.9067 17.1147 14.9995 17.2393C15.0923 17.3613 16.3154 19.2461 18.188 20.0542C18.6323 20.2471 18.979 20.3618 19.25 20.4473C19.6968 20.5889 20.1045 20.5693 20.4268 20.5229C20.7856 20.4692 21.5303 20.0713 21.6865 19.6343C21.8403 19.1997 21.8403 18.8262 21.7939 18.748C21.7476 18.6699 21.623 18.6235 21.4351 18.5283Z"
+                                    d="M23.3149 11.6899C21.9038 10.2788 20.0288 9.5 18.0317 9.5C13.9155 9.5 10.5635 12.8496 10.5635 16.9658C10.561 18.2817 10.9053 19.5659 11.5596 20.6987L10.5 24.5684L14.46 23.5283C15.5488 24.124 16.7793 24.4365 18.0293 24.439H18.0317C22.1479 24.439 25.4976 21.0894 25.5 16.9707C25.5 14.9761 24.7236 13.1011 23.3149 11.6899ZM18.0317 23.1768H18.0293C16.916 23.1768 15.8223 22.8765 14.8701 22.3125L14.6431 22.1782L12.292 22.7935L12.9194 20.5034L12.7729 20.269C12.1504 19.2803 11.8232 18.1377 11.8232 16.9658C11.8232 13.5454 14.6089 10.7622 18.0342 10.7622C19.6919 10.7622 21.2495 11.4092 22.4214 12.5811C23.5933 13.7554 24.2378 15.313 24.2378 16.9707C24.2378 20.3936 21.4521 23.1768 18.0317 23.1768ZM21.4351 18.5283C21.2495 18.4355 20.3315 17.9839 20.1606 17.9229C19.9897 17.8594 19.8652 17.8301 19.7407 18.0156C19.6162 18.2036 19.2598 18.6235 19.1499 18.748C19.0425 18.8701 18.9326 18.8872 18.7471 18.7944C18.5591 18.7017 17.9585 18.5039 17.2456 17.8667C16.6914 17.3735 16.3154 16.7607 16.208 16.5752C16.0981 16.3872 16.1958 16.2871 16.2886 16.1943C16.374 16.1113 16.4766 15.9771 16.5693 15.8672C16.6621 15.7598 16.6938 15.6816 16.7573 15.5571C16.8184 15.4326 16.7866 15.3228 16.7402 15.23C16.6938 15.1372 16.3203 14.2168 16.1641 13.8433C16.0127 13.4795 15.8589 13.5308 15.7441 13.5234C15.6367 13.5186 15.5122 13.5186 15.3877 13.5186C15.2632 13.5186 15.0605 13.5649 14.8896 13.7529C14.7188 13.9385 14.2378 14.3901 14.2378 15.3081C14.2378 16.2261 14.9067 17.1147 14.9995 17.2393C15.0923 17.3613 16.315419.2461 18.188 20.0542C18.6323 20.2471 18.979 20.3618 19.25 20.4473C19.6968 20.5889 20.1045 20.5693 20.4268 20.5229C20.7856 20.4692 21.5303 20.0713 21.6865 19.6343C21.8403 19.1997 21.8403 18.8262 21.7939 18.748C21.7476 18.6699 21.623 18.6235 21.4351 18.5283Z"
                                     fill="#7491A5" fill-opacity="0.6" />
                             </svg>
                         </a>
-                        <a href="#" class="soc-icon ">
-                            <svg id="icon-tg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                        <a href="#" class="soc-icon mobile-soc-icon">
+                            <svg id="mobile-icon-tg" width="36" height="35" viewBox="0 0 36 35" fill="none">
                                 <ellipse cx="18" cy="17.5" rx="18" ry="17.5" fill="white" class="svg-eclipse" />
                                 <path class="svg-icon"
                                     d="M22.8497 11.1227C22.6713 11.131 22.5032 11.1829 22.3538 11.241H22.3517C22.2002 11.3012 21.4801 11.6042 20.3865 12.0628C19.2928 12.5235 17.8734 13.1212 16.4644 13.7147C13.6504 14.8996 10.8842 16.0659 10.8842 16.0659L10.9174 16.0534C10.9174 16.0534 10.7264 16.1157 10.5272 16.2526C10.4255 16.319 10.3135 16.4103 10.2159 16.5535C10.1184 16.6967 10.0396 16.9167 10.0686 17.1429C10.1163 17.5268 10.3654 17.7571 10.5438 17.8837C10.7244 18.0124 10.8966 18.0726 10.8966 18.0726H10.9008L13.4948 18.9462C13.611 19.3198 14.2854 21.5361 14.4473 22.0466C14.5427 22.3516 14.6361 22.5425 14.7523 22.6878C14.8084 22.7625 14.8748 22.8248 14.9536 22.8746C14.9847 22.8932 15.0179 22.9078 15.0511 22.9202C15.0615 22.9264 15.0719 22.9285 15.0844 22.9306L15.0574 22.9244C15.0657 22.9264 15.0719 22.9327 15.0781 22.9347C15.0989 22.941 15.1134 22.9431 15.1404 22.9472C15.5513 23.0717 15.8812 22.8165 15.8812 22.8165L15.8999 22.8019L17.4314 21.4074L19.9984 23.3768L20.0565 23.4017C20.5919 23.6362 21.1335 23.5054 21.4199 23.2751C21.7084 23.0427 21.8204 22.7459 21.8204 22.7459L21.8391 22.6982L23.823 12.5359C23.879 12.2848 23.8936 12.0503 23.8313 11.8221C23.769 11.5938 23.6093 11.3801 23.4163 11.2659C23.2212 11.1497 23.0282 11.1144 22.8497 11.1227ZM22.7958 12.2122C22.7937 12.2454 22.7999 12.2413 22.7854 12.3056V12.3118L20.8202 22.3682C20.8119 22.3827 20.7974 22.4139 20.7579 22.445C20.7164 22.4782 20.6832 22.499 20.511 22.4305L17.3712 20.0232L15.4745 21.7519L15.8729 19.2077C15.8729 19.2077 20.7911 14.6236 21.0028 14.4264C21.2145 14.2293 21.1439 14.1878 21.1439 14.1878C21.1584 13.9471 20.8243 14.1172 20.8243 14.1172L14.356 18.1244L14.3539 18.1141L11.2535 17.0702V17.0682C11.2515 17.0682 11.2473 17.0661 11.2452 17.0661C11.2473 17.0661 11.2618 17.0599 11.2618 17.0599L11.2784 17.0516L11.295 17.0453C11.295 17.0453 14.0634 15.8791 16.8773 14.6941C18.2864 14.1006 19.7058 13.503 20.7974 13.0423C21.8889 12.5837 22.6962 12.2475 22.7418 12.2288C22.7854 12.2122 22.7646 12.2122 22.7958 12.2122Z"
                                     fill="#7491A5" fill-opacity="0.6" />
                             </svg>
                         </a>
-                        <div class="header-top__consult">
-                            <a href="#" class="btn">Консультация</a>
-                        </div>
-            
-            <!-- burger menu -->
-                        <div class="burger-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                     </div>
-
+                    <div class="mobile-menu__address"></div>
                 </div>
-                <div class="header-main">
-                    <h2 class="header-main__text">Трансплантация волос<br>
-                        в одной из лучших клиник Турции<br>
-                        <span class="bold">Avrasya Hastanesi</span>
-                    </h2>
-                    <div class="header-main__sub">
-                        <div class="header-main__subblock">
-                            <svg>
-                                <use xlink:href="img/svg/sprite.svg#hand"></use>
-                            </svg>
-                            <span>
-                                Стоимость/время: <br> от 50 000₽ / 3 дня
-                            </span>
-                        </div>
-                        <div class="header-main__subblock">
-                            <svg>
-                                <use xlink:href="img/svg/sprite.svg#talk"></use>
-                            </svg>
-                            <span>
-                                Переводчик, проживание <br> и сопровождение
-                            </span>
-                        </div>
-                        <div class="header-main__subblock">
-                            <svg>
-                                <use xlink:href="img/svg/sprite.svg#header_approve"></use>
-                            </svg>
-                            <span>
-                                Пожизненная гарантия <br> на пересадку
-                            </span>
-                        </div>
-                    </div>
-                    <a href="#" class="btn header-main-btn">Узнать больше</a>
-                </div>
-                <div class="header-bottom">
-
-                    <div class="header-bottom__arrows">
-                        <span class="svg-arrow-l arrows">
-                            <svg>
-                                <use xlink:href="img/svg/sprite.svg#arrow"></use>
-                            </svg>
-                        </span>
-                        <span class="svg-arrow-r arrows">
-                            <svg>
-                                <use xlink:href="img/svg/sprite.svg#arrow"></use>
-                            </svg>
-                        </span>
-                    </div>
-
-
-                </div>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#">Клиника</a></li>
+                    <li class="mobile-menu__item"><a href="#">Процедуры</a></li>
+                    <li class="mobile-menu__item"><a href="#">Цены</a></li>
+                    <li class="mobile-menu__item"><a href="#">Организация</a></li>
+                    <li class="mobile-menu__item"><a href="#">Контакты</a></li>
+                </ul>
             </div>
 
-        </header>
+            <div class="header-top">
+                <div class="header-top__logo">
+                    <img src="img/header/logo.png" alt="Logo">
+                </div>
+                <div class="header-top__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#">Клиника</a></li>
+                        <li class="nav__item"><a href="#">Процедуры</a>
+                            <ul class="submenu firstlevel">
+                                <li><a href="#">Осмотр</a></li>
+                                <li class="opener"><a href="#">Пересадка</a>
+                                    <ul class="submenu seclevel">
+                                        <li><a href="#">До 1000 графов</a></li>
+                                        <li><a href="#">До 2000 графов</a></li>
+                                        <li><a href="#">До 3000 графов</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Профилактика</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="#">Цены</a></li>
+                        <li class="nav__item"><a href="#">Организация</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header-top__contacts">
+                    <a class="header-phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    <a href="#" class="soc-icon">
+                        <svg id="icon-wa" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <ellipse cx="18" cy="17.5" rx="18" ry="17.5" fill="white" class="svg-eclipse" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" class="svg-icon"
+                                d="M23.3149 11.6899C21.9038 10.2788 20.0288 9.5 18.0317 9.5C13.9155 9.5 10.5635 12.8496 10.5635 16.9658C10.561 18.2817 10.9053 19.5659 11.5596 20.6987L10.5 24.5684L14.46 23.5283C15.5488 24.124 16.7793 24.4365 18.0293 24.439H18.0317C22.1479 24.439 25.4976 21.0894 25.5 16.9707C25.5 14.9761 24.7236 13.1011 23.3149 11.6899ZM18.0317 23.1768H18.0293C16.916 23.1768 15.8223 22.8765 14.8701 22.3125L14.6431 22.1782L12.292 22.7935L12.9194 20.5034L12.7729 20.269C12.1504 19.2803 11.8232 18.1377 11.8232 16.9658C11.8232 13.5454 14.6089 10.7622 18.0342 10.7622C19.6919 10.7622 21.2495 11.4092 22.4214 12.5811C23.5933 13.7554 24.2378 15.313 24.2378 16.9707C24.2378 20.3936 21.4521 23.1768 18.0317 23.1768ZM21.4351 18.5283C21.2495 18.4355 20.3315 17.9839 20.1606 17.9229C19.9897 17.8594 19.8652 17.8301 19.7407 18.0156C19.6162 18.2036 19.2598 18.6235 19.1499 18.748C19.0425 18.8701 18.9326 18.8872 18.7471 18.7944C18.5591 18.7017 17.9585 18.5039 17.2456 17.8667C16.6914 17.3735 16.3154 16.7607 16.208 16.5752C16.0981 16.3872 16.1958 16.2871 16.2886 16.1943C16.374 16.1113 16.4766 15.9771 16.5693 15.8672C16.6621 15.7598 16.6938 15.6816 16.7573 15.5571C16.8184 15.4326 16.7866 15.3228 16.7402 15.23C16.6938 15.1372 16.3203 14.2168 16.1641 13.8433C16.0127 13.4795 15.8589 13.5308 15.7441 13.5234C15.6367 13.5186 15.5122 13.5186 15.3877 13.5186C15.2632 13.5186 15.0605 13.5649 14.8896 13.7529C14.7188 13.9385 14.2378 14.3901 14.2378 15.3081C14.2378 16.2261 14.9067 17.1147 14.9995 17.2393C15.0923 17.3613 16.3154 19.2461 18.188 20.0542C18.6323 20.2471 18.979 20.3618 19.25 20.4473C19.6968 20.5889 20.1045 20.5693 20.4268 20.5229C20.7856 20.4692 21.5303 20.0713 21.6865 19.6343C21.8403 19.1997 21.8403 18.8262 21.7939 18.748C21.7476 18.6699 21.623 18.6235 21.4351 18.5283Z"
+                                fill="#7491A5" fill-opacity="0.6" />
+                        </svg>
+                    </a>
+                    <a href="#" class="soc-icon ">
+                        <svg id="icon-tg" width="36" height="35" viewBox="0 0 36 35" fill="none">
+                            <ellipse cx="18" cy="17.5" rx="18" ry="17.5" fill="white" class="svg-eclipse" />
+                            <path class="svg-icon"
+                                d="M22.8497 11.1227C22.6713 11.131 22.5032 11.1829 22.3538 11.241H22.3517C22.2002 11.3012 21.4801 11.6042 20.3865 12.0628C19.2928 12.5235 17.8734 13.1212 16.4644 13.7147C13.6504 14.8996 10.8842 16.0659 10.8842 16.0659L10.9174 16.0534C10.9174 16.0534 10.7264 16.1157 10.5272 16.2526C10.4255 16.319 10.3135 16.4103 10.2159 16.5535C10.1184 16.6967 10.0396 16.9167 10.0686 17.1429C10.1163 17.5268 10.3654 17.7571 10.5438 17.8837C10.7244 18.0124 10.8966 18.0726 10.8966 18.0726H10.9008L13.4948 18.9462C13.611 19.3198 14.2854 21.5361 14.4473 22.0466C14.5427 22.3516 14.6361 22.5425 14.7523 22.6878C14.8084 22.7625 14.8748 22.8248 14.9536 22.8746C14.9847 22.8932 15.0179 22.9078 15.0511 22.9202C15.0615 22.9264 15.0719 22.9285 15.0844 22.9306L15.0574 22.9244C15.0657 22.9264 15.0719 22.9327 15.0781 22.9347C15.0989 22.941 15.1134 22.9431 15.1404 22.9472C15.5513 23.0717 15.8812 22.8165 15.8812 22.8165L15.8999 22.8019L17.4314 21.4074L19.9984 23.3768L20.0565 23.4017C20.5919 23.6362 21.1335 23.5054 21.4199 23.2751C21.7084 23.0427 21.8204 22.7459 21.8204 22.7459L21.8391 22.6982L23.823 12.5359C23.879 12.2848 23.8936 12.0503 23.8313 11.8221C23.769 11.5938 23.6093 11.3801 23.4163 11.2659C23.2212 11.1497 23.0282 11.1144 22.8497 11.1227ZM22.7958 12.2122C22.7937 12.2454 22.7999 12.2413 22.7854 12.3056V12.3118L20.8202 22.3682C20.8119 22.3827 20.7974 22.4139 20.7579 22.445C20.7164 22.4782 20.6832 22.499 20.511 22.4305L17.3712 20.0232L15.4745 21.7519L15.8729 19.2077C15.8729 19.2077 20.7911 14.6236 21.0028 14.4264C21.2145 14.2293 21.1439 14.1878 21.1439 14.1878C21.1584 13.9471 20.8243 14.1172 20.8243 14.1172L14.356 18.1244L14.3539 18.1141L11.2535 17.0702V17.0682C11.2515 17.0682 11.2473 17.0661 11.2452 17.0661C11.2473 17.0661 11.2618 17.0599 11.2618 17.0599L11.2784 17.0516L11.295 17.0453C11.295 17.0453 14.0634 15.8791 16.8773 14.6941C18.2864 14.1006 19.7058 13.503 20.7974 13.0423C21.8889 12.5837 22.6962 12.2475 22.7418 12.2288C22.7854 12.2122 22.7646 12.2122 22.7958 12.2122Z"
+                                fill="#7491A5" fill-opacity="0.6" />
+                        </svg>
+                    </a>
+                    <div class="header-top__consult">
+                        <a href="#" class="btn" onclick="popup()">Консультация</a>
+                    </div>
 
-        <section class="reputation inner-wrap">
-            <h2 class="reputation__header section-header">Клиника с международной репутацией</h2>
-            <p class="reputation__text section-text">В Avrasya Hastanesi приезжают со всего мира. Передовые технологии в
-                микрохирургии и опыт врачей гарантируют превосходную трансплантацию на долгие годы.</p>
-            <div class="reputation__advatages">
-                <div class="advantages-item">
-                    <div class="advantages-item__icon">
-                        <svg class="inline-svg-icon">
-                            <use xlink:href="img/svg/sprite.svg#doc"></use>
-                        </svg>
+                    <!-- burger menu -->
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <p class="advantages-item__text">
-                        Лучшие специалисты в области трансплантации
-                    </p>
                 </div>
-                <div class="advantages-item">
-                    <div class="advantages-item__icon">
-                        <svg class="inline-svg-icon">
-                            <use xlink:href="img/svg/sprite.svg#cash"></use>
-                        </svg>
-                    </div>
-                    <p class="advantages-item__text">
-                        Низкие цены в силу экономического различия
-                    </p>
-                </div>
-                <div class="advantages-item">
-                    <div class="advantages-item__icon">
-                        <svg class="inline-svg-icon">
-                            <use xlink:href="img/svg/sprite.svg#approve"></use>
-                        </svg>
-                    </div>
-                    <p class="advantages-item__text">
-                        Высокий уровень комфорта и удобства для пациентов
-                    </p>
-                </div>
+
             </div>
-            <div class="reputation__images">
+            <div class="header-main">
+                <h2 class="header-main__text">Трансплантация волос<br>
+                    в одной из лучших клиник Турции<br>
+                    <span class="bold">Avrasya Hastanesi</span>
+                </h2>
+                <div class="header-main__sub">
+                    <div class="header-main__subblock">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#hand"></use>
+                        </svg>
+                        <span>
+                            Стоимость/время: <br> от 50 000₽ / 3 дня
+                        </span>
+                    </div>
+                    <div class="header-main__subblock">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#talk"></use>
+                        </svg>
+                        <span>
+                            Переводчик, проживание <br> и сопровождение
+                        </span>
+                    </div>
+                    <div class="header-main__subblock">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#header_approve"></use>
+                        </svg>
+                        <span>
+                            Пожизненная гарантия <br> на пересадку
+                        </span>
+                    </div>
+                </div>
+                <a href="#" class="btn header-main-btn">Узнать больше</a>
+            </div>
+            <div class="header-bottom">
 
-                <div class="rep-group">
-                    <div class="rep-1 rep-col">
-                        <a data-fancybox="gallery" href="img/reputation/rep1.png"><img class="small"
-                                src="img/reputation/rep1.png" alt="patients"></a>
-                        <a data-fancybox="gallery" href="img/reputation/rep2.png"><img class="tall"
-                                src="img/reputation/rep2.png" alt="patients"></a>
-                    </div>
-                    <div class="rep-3_1 rep-col temp-invis">
-                        <a data-fancybox="gallery" href="img/reputation/rep6.png"><img class="small"
-                                src="img/reputation/rep6.png" alt="patients"></a>
-                        <a data-fancybox="gallery" href="img/reputation/rep7.png"><img class="tall"
-                                src="img/reputation/rep7.png" alt="patients"></a>
-                    </div>
+                <div class="header-bottom__arrows">
+                    <span class="svg-arrow-l arrows">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                        </svg>
+                    </span>
+                    <span class="svg-arrow-r arrows">
+                        <svg>
+                            <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                        </svg>
+                    </span>
                 </div>
-                <div class="rep-2 rep-col">
-                    <a data-fancybox="gallery" href="img/reputation/rep3.png"><img class="large"
-                            src="img/reputation/rep3.png" alt="patients"></a>
-                    <div class="rep-row">
-                        <a data-fancybox="gallery" href="img/reputation/rep4.png"><img class="small"
-                                src="img/reputation/rep4.png" alt="patients"></a>
-                        <a data-fancybox="gallery" href="img/reputation/rep5.png"><img class="small"
-                                src="img/reputation/rep5.png" alt="patients"></a>
-                    </div>
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="reputation inner-wrap">
+        <h2 class="reputation__header section-header">Клиника с международной репутацией</h2>
+        <p class="reputation__text section-text">В Avrasya Hastanesi приезжают со всего мира. Передовые технологии в
+            микрохирургии и опыт врачей гарантируют превосходную трансплантацию на долгие годы.</p>
+        <div class="reputation__advatages">
+            <div class="advantages-item">
+                <div class="advantages-item__icon">
+                    <svg class="inline-svg-icon">
+                        <use xlink:href="img/svg/sprite.svg#doc"></use>
+                    </svg>
                 </div>
-                <div class="rep-3 rep-col">
+                <p class="advantages-item__text">
+                    Лучшие специалисты в области трансплантации
+                </p>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item__icon">
+                    <svg class="inline-svg-icon">
+                        <use xlink:href="img/svg/sprite.svg#cash"></use>
+                    </svg>
+                </div>
+                <p class="advantages-item__text">
+                    Низкие цены в силу экономического различия
+                </p>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item__icon">
+                    <svg class="inline-svg-icon">
+                        <use xlink:href="img/svg/sprite.svg#approve"></use>
+                    </svg>
+                </div>
+                <p class="advantages-item__text">
+                    Высокий уровень комфорта и удобства для пациентов
+                </p>
+            </div>
+        </div>
+        <div class="reputation__images">
+
+            <div class="rep-group">
+                <div class="rep-1 rep-col">
+                    <a data-fancybox="gallery" href="img/reputation/rep1.png"><img class="small"
+                            src="img/reputation/rep1.png" alt="patients"></a>
+                    <a data-fancybox="gallery" href="img/reputation/rep2.png"><img class="tall"
+                            src="img/reputation/rep2.png" alt="patients"></a>
+                </div>
+                <div class="rep-3_1 rep-col temp-invis">
                     <a data-fancybox="gallery" href="img/reputation/rep6.png"><img class="small"
                             src="img/reputation/rep6.png" alt="patients"></a>
                     <a data-fancybox="gallery" href="img/reputation/rep7.png"><img class="tall"
                             src="img/reputation/rep7.png" alt="patients"></a>
                 </div>
-                <div class="rep-group">
-                    <div class="rep-4 rep-col">
-                        <a data-fancybox="gallery" href="img/reputation/rep8.png"><img class="tall"
-                                src="img/reputation/rep8.png" alt="patients"></a>
-                        <a data-fancybox="gallery" href="img/reputation/rep9.png"><img class="small"
-                                src="img/reputation/rep9.png" alt="patients"></a>
-                    </div>
-                    <div class="rep-5 rep-col">
-                        <a data-fancybox="gallery" href="img/reputation/rep10.png"><img class="small"
-                                src="img/reputation/rep10.png" alt="patients"></a>
-                        <a data-fancybox="gallery" href="img/reputation/rep11.png"><img class="tall"
-                                src="img/reputation/rep11.png" alt="patients"></a>
-                    </div>
+            </div>
+            <div class="rep-2 rep-col">
+                <a data-fancybox="gallery" href="img/reputation/rep3.png"><img class="large"
+                        src="img/reputation/rep3.png" alt="patients"></a>
+                <div class="rep-row">
+                    <a data-fancybox="gallery" href="img/reputation/rep4.png"><img class="small"
+                            src="img/reputation/rep4.png" alt="patients"></a>
+                    <a data-fancybox="gallery" href="img/reputation/rep5.png"><img class="small"
+                            src="img/reputation/rep5.png" alt="patients"></a>
                 </div>
             </div>
-        </section>
-
-        <section class="doc">
-
-            <div class="doc__image">
-                <img src="img/doc/doc.png" alt="Doctor">
-
+            <div class="rep-3 rep-col">
+                <a data-fancybox="gallery" href="img/reputation/rep6.png"><img class="small"
+                        src="img/reputation/rep6.png" alt="patients"></a>
+                <a data-fancybox="gallery" href="img/reputation/rep7.png"><img class="tall"
+                        src="img/reputation/rep7.png" alt="patients"></a>
             </div>
-            <div class="doc__text">
-                <h4>Не стесняйтесь своих желаний</h4>
-                <p><span class="bold">Проблемы с выпадением волос касаются многих</span>, в том числе и женщин;
-                    но если раньше исправить это было дорого и сложно, то <span class="bold">сейчас это
-                        занимает всего несколько дней</span> пребывания в первоклассной обстановке.
-                </p>
-                <p>
-                    Не стоит терпеть облысение, словно это что-то непоправимое и неизбежное.
-                    Есть методики, есть технологии, есть специалисты - вам осталось только решить, хотите вы этого или
-                    нет.
-                </p>
-                <div class="doc__signature">
-                    <p><span class="bold">Петров Стеман Иванович</span><br>
-                        зав. отделения хирургии</p>
-                    <img src="img/doc/sign.png" alt="signature" class="sign">
+            <div class="rep-group">
+                <div class="rep-4 rep-col">
+                    <a data-fancybox="gallery" href="img/reputation/rep8.png"><img class="tall"
+                            src="img/reputation/rep8.png" alt="patients"></a>
+                    <a data-fancybox="gallery" href="img/reputation/rep9.png"><img class="small"
+                            src="img/reputation/rep9.png" alt="patients"></a>
+                </div>
+                <div class="rep-5 rep-col">
+                    <a data-fancybox="gallery" href="img/reputation/rep10.png"><img class="small"
+                            src="img/reputation/rep10.png" alt="patients"></a>
+                    <a data-fancybox="gallery" href="img/reputation/rep11.png"><img class="tall"
+                            src="img/reputation/rep11.png" alt="patients"></a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="fue">
-            <div class="inner-wrap">
-                <h2 class="fue__header section-header">Машинный способ трансплантации, <br>или просто FUE</h2>
-                <p class="fue__text section-text">Благодаря бесшовной методике FUE (Follicular Unit Extraction) после
-                    процедуры на коже головы не остается рубцов, так как работа ведется только с фолликулами.</p>
-                <div class="fue__block">
-                    <div class="fue__image">
-                        <img src="img/fue/fue1.png" alt="Fue">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#fuenum1"></use>
-                        </svg>
-                    </div>
-                    <p>При помощи специальной машинки из реципиентной зоны (обычно затылок) извлекаются графты - пучки
-                        фолликул.</p>
+    <section class="doc">
+
+        <div class="doc__image">
+            <img src="img/doc/doc.png" alt="Doctor">
+
+        </div>
+        <div class="doc__text">
+            <h4>Не стесняйтесь своих желаний</h4>
+            <p><span class="bold">Проблемы с выпадением волос касаются многих</span>, в том числе и женщин;
+                но если раньше исправить это было дорого и сложно, то <span class="bold">сейчас это
+                    занимает всего несколько дней</span> пребывания в первоклассной обстановке.
+            </p>
+            <p>
+                Не стоит терпеть облысение, словно это что-то непоправимое и неизбежное.
+                Есть методики, есть технологии, есть специалисты - вам осталось только решить, хотите вы этого или
+                нет.
+            </p>
+            <div class="doc__signature">
+                <p><span class="bold">Петров Стеман Иванович</span><br>
+                    зав. отделения хирургии</p>
+                <img src="img/doc/sign.png" alt="signature" class="sign">
+            </div>
+        </div>
+    </section>
+
+    <section class="fue">
+        <div class="inner-wrap">
+            <h2 class="fue__header section-header">Машинный способ трансплантации, <br>или просто FUE</h2>
+            <p class="fue__text section-text">Благодаря бесшовной методике FUE (Follicular Unit Extraction) после
+                процедуры на коже головы не остается рубцов, так как работа ведется только с фолликулами.</p>
+            <div class="fue__block">
+                <div class="fue__image">
+                    <img src="img/fue/fue1.png" alt="Fue">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#fuenum1"></use>
+                    </svg>
                 </div>
-                <div class="fue__block">
-                    <div class="fue__image">
-                        <img src="img/fue/fue2.png" alt="Fue">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#fuenum2"></use>
-                        </svg>
-                    </div>
-                    <p>Из графтов формируются отдельные фолликулы или фолликулярные группы и тщательно обрабатываются
-                        для последующей трансплантации.</p>
+                <p>При помощи специальной машинки из реципиентной зоны (обычно затылок) извлекаются графты - пучки
+                    фолликул.</p>
+            </div>
+            <div class="fue__block">
+                <div class="fue__image">
+                    <img src="img/fue/fue2.png" alt="Fue">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#fuenum2"></use>
+                    </svg>
                 </div>
-                <div class="fue__block">
-                    <div class="fue__image">
-                        <img src="img/fue/fue3.png" alt="Fue">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#fuenum3"></use>
-                        </svg>
-                    </div>
-                    <p>На коже головы формируются каналы и согласно намеченной карте вживляются подготовленные
-                        фолликулы.</p>
+                <p>Из графтов формируются отдельные фолликулы или фолликулярные группы и тщательно обрабатываются
+                    для последующей трансплантации.</p>
+            </div>
+            <div class="fue__block">
+                <div class="fue__image">
+                    <img src="img/fue/fue3.png" alt="Fue">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#fuenum3"></use>
+                    </svg>
+                </div>
+                <p>На коже головы формируются каналы и согласно намеченной карте вживляются подготовленные
+                    фолликулы.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="result inner-wrap">
+        <h2 class="result__header section-header">Сохраните результаты FUE<br>
+            трансплантации на всю жизнь</h2>
+        <div id="beer-slider" class="beer-slider" data-beer-label="После">
+            <img src="img/result/after1.png" alt="Original - after">
+            <div class="beer-reveal" data-beer-label="До">
+                <img src="img/result/before1.png" alt="Processed - before">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews inner-wrap">
+        <h2 class="reviews__header section-header">Вот что о нас думают <br>
+            пациенты Avrasya Hospital</h2>
+        <div class="reviews__videos">
+            <div class="big-video">
+                <iframe src="https://www.youtube.com/embed/-pwvctnQUYM" frameborder="0"></iframe>
+            </div>
+            <div class="slider-wrap">
+                <div class="small-videos">
+                    <iframe class="hidden-video" src="https://www.youtube.com/embed/-pwvctnQUYM"
+                        frameborder="0"></iframe>
+                    <iframe class="top-row" src="https://www.youtube.com/embed/Kmuc5Rqn0Pk" frameborder="0"></iframe>
+                    <iframe class="top-row" src="https://www.youtube.com/embed/cvoBL1glXfA" frameborder="0"></iframe>
+                    <iframe class="lower-row" src="https://www.youtube.com/embed/GvaE8aFExcM" frameborder="0"></iframe>
+                    <iframe class="lower-row" src="https://www.youtube.com/embed/n4oQnRG40c0" frameborder="0"></iframe>
+                </div>
+                <div class="arrows-wrap">
+                    <span class="slider-arrows prev_arrow"></span>
+                    <span class="slider-arrows next_arrow"></span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="result inner-wrap">
-            <h2 class="result__header section-header">Сохраните результаты FUE<br>
-                трансплантации на всю жизнь</h2>
-            <div id="beer-slider" class="beer-slider" data-beer-label="После">
-                <img src="img/result/after1.png" alt="Original - after">
-                <div class="beer-reveal" data-beer-label="До">
-                    <img src="img/result/before1.png" alt="Processed - before">
+    <section class="consult">
+        <div class="consult__wrap inner-wrap">
+            <div class="consult__form">
+                <h2 class="consult__header section-header">
+                    Обращайтесь за консультацией
+                </h2>
+                <div class="consult__text">
+                    Наверняка у вас есть вопросы, ответы на которые можно получить за несколько минут по телефону,
+                    нежели пытаться разобраться самостоятельно.
+
                 </div>
+                <div class="consult__fields">
+                    <input type="text" name="Name" id="consult_name" placeholder="Ваше имя:">
+                    <input type="text" name="Phone" id="consult_phone" placeholder="Телефон:">
+                </div>
+                <div class="consult__checkbox">
+                    <label class="container">
+                        Я согласен с правами обработки персональных данных
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button class="consult__button btn" onclick="popup()">Хочу консультацию</button>
             </div>
-        </section>
-
-
-        <section class="reviews inner-wrap">
-            <h2 class="reviews__header section-header">Вот что о нас думают <br>
-                пациенты Avrasya Hospital</h2>
-            <div class="reviews__videos">
-                <div class="big-video">
-                    <iframe src="https://www.youtube.com/embed/-pwvctnQUYM" frameborder="0"></iframe>
-                </div>
-                <div class="slider-wrap">
-                    <div class="small-videos">
-                        <iframe class="hidden-video" src="https://www.youtube.com/embed/-pwvctnQUYM"
-                            frameborder="0"></iframe>
-                        <iframe class="top-row" src="https://www.youtube.com/embed/Kmuc5Rqn0Pk"
-                            frameborder="0"></iframe>
-                        <iframe class="top-row" src="https://www.youtube.com/embed/cvoBL1glXfA"
-                            frameborder="0"></iframe>
-                        <iframe class="lower-row" src="https://www.youtube.com/embed/GvaE8aFExcM"
-                            frameborder="0"></iframe>
-                        <iframe class="lower-row" src="https://www.youtube.com/embed/n4oQnRG40c0"
-                            frameborder="0"></iframe>
-                    </div>
-                    <div class="arrows-wrap">
-                        <span class="slider-arrows prev_arrow"></span>
-                        <span class="slider-arrows next_arrow"></span>
-                    </div>
-                </div>
+            <div class="consult__img">
+                <img src="img/consult/consult_front_img.png" alt="Photo of FUE">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="consult">
-            <div class="consult__wrap inner-wrap">
-                <div class="consult__form">
-                    <h2 class="consult__header section-header">
-                        Обращайтесь за консультацией
-                    </h2>
-                    <div class="consult__text">
-                        Наверняка у вас есть вопросы, ответы на которые можно получить за несколько минут по телефону,
-                        нежели пытаться разобраться самостоятельно.
-
-                    </div>
-                    <div class="consult__fields">
-                        <input type="text" name="Name" id="consult_name" placeholder="Ваше имя:">
-                        <input type="text" name="Phone" id="consult_phone" placeholder="Телефон:">
-                    </div>
-                    <div class="consult__checkbox">
-                        <label class="container">
-                            Я согласен с правами обработки персональных данных
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <button class="consult__button btn">Хочу консультацию</button>
-                </div>
-                <div class="consult__img">
-                    <img src="img/consult/consult_front_img.png" alt="Photo of FUE">
-                </div>
+    <section class="change">
+        <h2 class="change__header section-header">Измените внешность так, как вам хочется</h2>
+        <p class="change__text">Помимо очевидного лечения облысения вы также можете изменить и бороду, сделав ее
+            гуще и ровнее, либо же нарастить целиком.</p>
+        <div class="change__block-wrap">
+            <div class="change__block" onclick="popup()">
+                <img src="img/change/change1.png" alt="">
+                <p class="change__range">До 1000 графтов</p>
+                <p class="change__price">50 000₽</p>
             </div>
-        </section>
-
-        <section class="change">
-            <h2 class="change__header section-header">Измените внешность так, как вам хочется</h2>
-            <p class="change__text">Помимо очевидного лечения облысения вы также можете изменить и бороду, сделав ее
-                гуще и ровнее, либо же нарастить целиком.</p>
-            <div class="change__block-wrap">
-                <div class="change__block">
-                    <img src="img/change/change1.png" alt="">
-                    <p class="change__range">До 1000 графтов</p>
-                    <p class="change__price">50 000₽</p>
-                </div>
-                <div class="change__block">
-                    <img src="img/change/change2.png" alt="">
-                    <p class="change__range">До 2000 графтов</p>
-                    <p class="change__price">100 000₽</p>
-                </div>
-                <div class="change__block">
-                    <img src="img/change/change3.png" alt="">
-                    <p class="change__range">До 3000 графтов</p>
-                    <p class="change__price">150 000₽</p>
-                </div>
+            <div class="change__block" onclick="popup()">
+                <img src="img/change/change2.png" alt="">
+                <p class="change__range">До 2000 графтов</p>
+                <p class="change__price">100 000₽</p>
             </div>
-            <p class="change__help"><a href="">Рассчитать количество графтов со специалистом</a></p>
-        </section>
+            <div class="change__block" onclick="popup()">
+                <img src="img/change/change3.png" alt="">
+                <p class="change__range">До 3000 графтов</p>
+                <p class="change__price">150 000₽</p>
+            </div>
+        </div>
+        <p class="change__help"  onclick="popup()">Рассчитать количество графтов со специалистом</p>
+    </section>
 
-        <section class="cost inner-wrap">
-            <h2 class="cost__header section-header">В стоимость включено</h2>
-            <p class="cost__text">Стоимость включает в себя все базовые расходы в Турции и непосредственно сами
-                медицинские услуги.
+    <section class="cost inner-wrap">
+        <h2 class="cost__header section-header">В стоимость включено</h2>
+        <p class="cost__text">Стоимость включает в себя все базовые расходы в Турции и непосредственно сами
+            медицинские услуги.
 
             <div class="cost__group">
                 <div class="cost__item">
@@ -467,202 +479,202 @@
                     <p class="cost__subtext">Трансплантация волос FUE методом</p>
                 </div>
             </div>
+        </p>
+    </section>
+
+    <section class="remember-wrap">
+        <div class="remember inner-wrap">
+            <h2 class="remember__header section-header">Помните: мы всегда неподалеку</h2>
+            <p class="remember__text">Несмотря на то, что вы будете находиться в чужой стране, стоит помнить, что вы
+                здесь не одни.</p>
+            <div class="remember__group">
+                <div class="remember__block">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#remember1"></use>
+                    </svg>
+                    <p>Во-первых, вам не нужно передвигаться по городу самостоятельно: вас всегда встретят и
+                        подвезут, куда нужно.</p>
+                </div>
+                <div class="remember__block">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#remember2"></use>
+                    </svg>
+                    <p>Во-вторых, у вас под боком всегда будет переводчик, который подскажет, если у вас появятся
+                        вопросы.</p>
+                </div>
+                <div class="remember__block">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#remember3"></use>
+                    </svg>
+                    <p>В- третьих, кроме вас здесь проходят лечение не только другие русские, но и иностранцы из
+                        США,
+                        Европы и Азии, так как Стамбул безусловно является одним из лидеров по трансплантации волос.
+                    </p>
+                </div>
+            </div>
+            <p class="remember__bottom-text">Просто доверьтесь нам и насладитесь поездкой.</p>
+        </div>
+    </section>
+
+    <section class="infobank__wrap">
+        <div class="infobank inner-wrap">
+            <h2 class="infobank__header section-header">Инфобанк пациента</h2>
+            <div class="infobank__block">
+
+                <h3 class="infobank__title">
+                    <span class="infobank__icon">
+                        <span class="question-icon">
+                            <span class="question-mark">?</span>
+                        </span>
+                    </span>Может ли быть потеря волос после пересадки?
+                    <span class="infobank__arrow arrow"></span>
+                </h3>
+
+                <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
+                    пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
+                    невероятно редка. <br>
+
+                    Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
+                    волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
+                    процентов, входит в состояние покоя. За это время эти волосы перестают расти.
+                </p>
+            </div>
+            <div class="infobank__block">
+
+                <h3 class="infobank__title">
+                    <span class="infobank__icon">
+                        <span class="question-icon">
+                            <span class="question-mark">?</span>
+                        </span>
+                    </span>Какие медицинские условия могут вызывать выпадение волос в области пересадки волос?
+                    <span class="infobank__arrow arrow"></span>
+                </h3>
+
+                <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
+                    пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
+                    невероятно редка. <br>
+
+                    Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
+                    волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
+                    процентов, входит в состояние покоя. За это время эти волосы перестают расти.
+                </p>
+            </div>
+            <div class="infobank__block">
+
+                <h3 class="infobank__title">
+                    <span class="infobank__icon">
+                        <span class="question-icon">
+                            <span class="question-mark">?</span>
+                        </span>
+                    </span>Могут ли изменения образа жизни вызывать новую потерю волос после пересадки волос FUE?
+                    <span class="infobank__arrow arrow"></span>
+                </h3>
+
+                <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
+                    пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
+                    невероятно редка. <br>
+
+                    Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
+                    волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
+                    процентов, входит в состояние покоя. За это время эти волосы перестают расти.
+                </p>
+            </div>
+            <div class="infobank__block">
+
+                <h3 class="infobank__title">
+                    <span class="infobank__icon">
+                        <span class="question-icon">
+                            <span class="question-mark">?</span>
+                        </span>
+                    </span>Может ли пересадка волос FUE стать неудачной?
+                    <span class="infobank__arrow arrow"></span>
+                </h3>
+
+                <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
+                    пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
+                    невероятно редка. <br>
+
+                    Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
+                    волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
+                    процентов, входит в состояние покоя. За это время эти волосы перестают расти.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="consult repair">
+        <div class="consult__wrap inner-wrap">
+            <div class="consult__form">
+                <h2 class="consult__header section-header">
+                    Обращайтесь за консультацией
+                </h2>
+                <div class="consult__text">
+                    Наверняка у вас есть вопросы, ответы на которые можно получить за несколько минут по телефону,
+                    нежели пытаться разобраться самостоятельно.
+
+                </div>
+                <div class="consult__fields">
+                    <input type="text" name="Name" id="consult_name" placeholder="Ваше имя:">
+                    <input type="text" name="Phone" id="consult_phone" placeholder="Телефон:">
+                </div>
+                <div class="consult__checkbox">
+                    <label class="container">
+                        Я согласен с правами обработки персональных данных
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button class="consult__button btn" onclick="popup()">Хочу консультацию</button>
+            </div>
+            <div class="consult__img">
+                <img src="img/repair/repair-front.png" alt="Photo of FUE">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer inner-wrap">
+        <div class="footer__logo">
+            <img src="img/footer/logo-footer.png" alt="logo">
+        </div>
+        <div class="footer__foruser">
+
+            <h4>Пользователю</h4>
+            <p class="footer__links">
+                <a href="#">Официальный сайт больницы</a>
             </p>
-        </section>
-
-        <section class="remember-wrap">
-            <div class="remember inner-wrap">
-                <h2 class="remember__header section-header">Помните: мы всегда неподалеку</h2>
-                <p class="remember__text">Несмотря на то, что вы будете находиться в чужой стране, стоит помнить, что вы
-                    здесь не одни.</p>
-                <div class="remember__group">
-                    <div class="remember__block">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#remember1"></use>
-                        </svg>
-                        <p>Во-первых, вам не нужно передвигаться по городу самостоятельно: вас всегда встретят и
-                            подвезут, куда нужно.</p>
-                    </div>
-                    <div class="remember__block">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#remember2"></use>
-                        </svg>
-                        <p>Во-вторых, у вас под боком всегда будет переводчик, который подскажет, если у вас появятся
-                            вопросы.</p>
-                    </div>
-                    <div class="remember__block">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#remember3"></use>
-                        </svg>
-                        <p>В- третьих, кроме вас здесь проходят лечение не только другие русские, но и иностранцы из
-                            США,
-                            Европы и Азии, так как Стамбул безусловно является одним из лидеров по трансплантации волос.
-                        </p>
-                    </div>
+            <p class="footer__links">
+                <a href="#">Политика конфиденциальности</a>
+            </p>
+        </div>
+        <div class="footer__contacts">
+            <h4>Контакты в России</h4>
+            <div class="footer__group">
+                <div class="footer__subgroup">
+                    <svg class="phone-icon">
+                        <use xlink:href="img/svg/sprite.svg#footer-tel"></use>
+                    </svg>
+                    <a href="tel:+79999999999" class="footer__phone">+7 (958) 756-98-14</a>
                 </div>
-                <p class="remember__bottom-text">Просто доверьтесь нам и насладитесь поездкой.</p>
+                <button href="" class="footer__button btn" onclick="popup()">Получить консультацию</button>
             </div>
-        </section>
-
-        <section class="infobank__wrap">
-            <div class="infobank inner-wrap">
-                <h2 class="infobank__header section-header">Инфобанк пациента</h2>
-                <div class="infobank__block">
-
-                    <h3 class="infobank__title">
-                        <span class="infobank__icon">
-                            <span class="question-icon">
-                                <span class="question-mark">?</span>
-                            </span>
-                        </span>Может ли быть потеря волос после пересадки?
-                        <span class="infobank__arrow arrow"></span>
-                    </h3>
-
-                    <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
-                        пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
-                        невероятно редка. <br>
-
-                        Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
-                        волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
-                        процентов, входит в состояние покоя. За это время эти волосы перестают расти.
-                    </p>
+            <div class="footer__group">
+                <div class="footer__subgroup">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#footer-letter"></use>
+                    </svg>
+                    <a href="mailto: ainternational@avrasyahospital.ru"
+                        class="footer__links">ainternational@avrasyahospital.ru</a>
                 </div>
-                <div class="infobank__block">
-
-                    <h3 class="infobank__title">
-                        <span class="infobank__icon">
-                            <span class="question-icon">
-                                <span class="question-mark">?</span>
-                            </span>
-                        </span>Какие медицинские условия могут вызывать выпадение волос в области пересадки волос?
-                        <span class="infobank__arrow arrow"></span>
-                    </h3>
-
-                    <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
-                        пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
-                        невероятно редка. <br>
-
-                        Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
-                        волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
-                        процентов, входит в состояние покоя. За это время эти волосы перестают расти.
-                    </p>
-                </div>
-                <div class="infobank__block">
-
-                    <h3 class="infobank__title">
-                        <span class="infobank__icon">
-                            <span class="question-icon">
-                                <span class="question-mark">?</span>
-                            </span>
-                        </span>Могут ли изменения образа жизни вызывать новую потерю волос после пересадки волос FUE?
-                        <span class="infobank__arrow arrow"></span>
-                    </h3>
-
-                    <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
-                        пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
-                        невероятно редка. <br>
-
-                        Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
-                        волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
-                        процентов, входит в состояние покоя. За это время эти волосы перестают расти.
-                    </p>
-                </div>
-                <div class="infobank__block">
-
-                    <h3 class="infobank__title">
-                        <span class="infobank__icon">
-                            <span class="question-icon">
-                                <span class="question-mark">?</span>
-                            </span>
-                        </span>Может ли пересадка волос FUE стать неудачной?
-                        <span class="infobank__arrow arrow"></span>
-                    </h3>
-
-                    <p class="infobank__text">Общая вопрос заключается в том, можно ли снова потерять волосы, даже если
-                        пересадка волос FUE прошла успешно. Вы можете быть уверены, что неудачная трансплантация волос
-                        невероятно редка. <br>
-
-                        Одной из причин заметного выпадения волос на протяжении многих лет после успешной трансплантации
-                        волос является эффлювия Телоген. Это происходит, когда большая часть фолликулов, часто около 10
-                        процентов, входит в состояние покоя. За это время эти волосы перестают расти.
-                    </p>
+                <div class="footer__subgroup">
+                    <svg>
+                        <use xlink:href="img/svg/sprite.svg#footer-marker"></use>
+                    </svg>
+                    <a href="#" class="footer__links"> Москва. ул. Индустриальная 15</a>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="consult repair">
-            <div class="consult__wrap inner-wrap">
-                <div class="consult__form">
-                    <h2 class="consult__header section-header">
-                        Обращайтесь за консультацией
-                    </h2>
-                    <div class="consult__text">
-                        Наверняка у вас есть вопросы, ответы на которые можно получить за несколько минут по телефону,
-                        нежели пытаться разобраться самостоятельно.
-
-                    </div>
-                    <div class="consult__fields">
-                        <input type="text" name="Name" id="consult_name" placeholder="Ваше имя:">
-                        <input type="text" name="Phone" id="consult_phone" placeholder="Телефон:">
-                    </div>
-                    <div class="consult__checkbox">
-                        <label class="container">
-                            Я согласен с правами обработки персональных данных
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <button class="consult__button btn">Хочу консультацию</button>
-                </div>
-                <div class="consult__img">
-                    <img src="img/repair/repair-front.png" alt="Photo of FUE">
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer inner-wrap">
-            <div class="footer__logo">
-                <img src="img/footer/logo-footer.png" alt="logo">
-            </div>
-            <div class="footer__foruser">
-
-                <h4>Пользователю</h4>
-                <p class="footer__links">
-                    <a href="#">Официальный сайт больницы</a>
-                </p>
-                <p class="footer__links">
-                    <a href="#">Политика конфиденциальности</a>
-                </p>
-            </div>
-            <div class="footer__contacts">
-                <h4>Контакты в России</h4>
-                <div class="footer__group">
-                    <div class="footer__subgroup">
-                        <svg class="phone-icon">
-                            <use xlink:href="img/svg/sprite.svg#footer-tel"></use>
-                        </svg>  
-                        <a href="tel:+79999999999" class="footer__phone">+7 (958) 756-98-14</a>
-                    </div>
-                    <a href="" class="footer__button btn">Получить консультацию</a>
-                </div>
-                <div class="footer__group">
-                    <div class="footer__subgroup">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#footer-letter"></use>
-                        </svg>
-                        <a href="mailto: ainternational@avrasyahospital.ru"
-                            class="footer__links">ainternational@avrasyahospital.ru</a>
-                    </div>
-                    <div class="footer__subgroup">
-                        <svg>
-                            <use xlink:href="img/svg/sprite.svg#footer-marker"></use>
-                        </svg>
-                        <a href="#" class="footer__links"> Москва. ул. Индустриальная 15</a>
-                    </div>
-                </div>
-            </div>
-
-    </div>
+        </div>
 
     </footer>
 
