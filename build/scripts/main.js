@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 
 
-
+      //video slider script
       $('.video-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -73,23 +73,25 @@ $(document).ready(function() {
         nextArrow: $('.next_arrow'),
         dots: true
       });
+      //end of video slider script
 
-
-      $('.header-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        draggable: true,
-        prevArrow: $('.svg-arrow-l'),
-        nextArrow: $('.svg-arrow-r'),
-        dots: true,
-        infinite: true,
+      //header slider owl start
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        items: 1,
         autoplay: true,
-        autoplaySpeed: 4000
+        autoplayTimeout: 8000,
+        loop: true
       });
 
-      //end of video slider script
+      $('.svg-arrow-r').on('click', function() {
+          owl.trigger('next.owl.carousel');
+      })
+      // Go to the previous item
+      $('.svg-arrow-l').on('click', function() {
+          owl.trigger('prev.owl.carousel', [300]);
+      })
+      //header slider owl end
 
       $('.consult__fields input').focus( function(){
         $(this).attr('placeholder', ''); 
