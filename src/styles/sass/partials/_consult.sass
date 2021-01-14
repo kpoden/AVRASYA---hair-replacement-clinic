@@ -3,10 +3,14 @@
     background-size: cover
     height: 727px
     color: $white
+    
     +mw768
         height: 560px
     +mw600
         height: 630px
+    +mw480
+        height: auto
+        padding-bottom: 20px
     &__wrap
         display: flex
         justify-content: space-between
@@ -44,7 +48,7 @@
             +mw1440
                 width: 150px
             +mw1180
-                width: 80%
+                width: 90%
                 margin: 0 auto 30px
             &:first-child
                 margin-right: 35px
