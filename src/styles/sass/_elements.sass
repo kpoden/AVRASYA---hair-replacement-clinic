@@ -36,6 +36,7 @@
     padding-top: 100px
     +mw480
         padding-top: 50px
+        font-size: 25px
 
 .section-text
     font-size: 18px
@@ -95,16 +96,22 @@
         display: block
         min-width: 290px 
         color: $beige
+        a
+            border: 1px solid $beige
+            border-radius: 50px
+            padding: 10px 15px
 
-        &:hover
-            color: $dark-grey
+            &:hover
+                color: $dark-grey
+                border: 1px solid $dark-grey
         +mw979
             margin-top: -15px
             font-size: 1.7em
         +mw768
             margin-top: 50px
+            font-size: 1.4em
         +mw600
-            font-size: 1.2em
+            font-size: 1.1em
         +mw480
             font-size: 1em
     .icons-group
@@ -125,12 +132,25 @@
             color: $beige
         +mw600
             font-size: 1.1em
+
+    &__logo
+        display: block
+        position: absolute
+        bottom: 30px
+        left: 50%
+        transform: translateX(-50%)
     .mobile-soc-icon
         width: 36px
         height: 36px
         display: inline-block
         &:hover
             transform: translateY(-3px)
+        svg
+            border: 1px solid $grey
+            border-radius: 50%
+            &:hover
+                border: 1px solid transparent
+
 
 .active
     transform: translateX(0)
@@ -197,6 +217,8 @@
 .inline-svg-icon
     width: 64px
     height: 64px
+
+
 // mobile menu styles --end
 
 

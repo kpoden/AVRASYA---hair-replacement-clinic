@@ -6,6 +6,10 @@ $(document).ready(function() {
     AOS.init({
       once: true
     });
+    window.addEventListener('resize', event => {
+      AOS.refresh();
+    }, true);
+   
 
 
 

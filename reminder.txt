@@ -1,5 +1,0 @@
--redo mobile menu, it looks awful
--fix x in mobile menu
--do medium-size gallery of 2 columns
--change gallery to slider on small screen
--change sizes of pics in gallery
