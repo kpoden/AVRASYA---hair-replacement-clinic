@@ -2,9 +2,12 @@ $(document).ready(function() {
 
     
     // wow js init
-      $(function(){
-        new WOW().init(); 
-      });
+    new WOW().init();
+    AOS.init({
+      once: true
+    });
+
+
 
     // mobile menu script
     $('.burger-menu').on('click', function(){
@@ -41,7 +44,7 @@ $(document).ready(function() {
 
       window.addEventListener('resize', event => {
         sliderInit();
-      }, false);
+      }, true);
 
       window.onload = sliderInit();
 

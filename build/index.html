@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <title>AVRASYA</title>
@@ -42,13 +43,13 @@
     <header>
         <div class="header-bg owl-carousel owl-theme">
             <div class="header-bg-item">
-                <img src="img/header/header_bg1.png" alt="">
+                <img src="img/header/header_bg1.png" alt="background">
             </div>
             <div class="header-bg-item">
-                <img src="img/header/header_bg2.png" alt="">
+                <img src="img/header/header_bg2.png" alt="background">
             </div>
             <div class="header-bg-item">
-                <img src="img/header/header_bg3.png" alt="">
+                <img src="img/header/header_bg3.png" alt="background">
             </div>
         </div>
 
@@ -87,8 +88,10 @@
                     <li class="mobile-menu__item"><a href="#">Контакты</a></li>
                 </ul>
             </div>
+            <!-- mobile menu end-->
 
-            <div class="header-top">
+
+            <div class="header-top" data-aos="fade-down" data-aos-delay="0" data-aos-duration="1000">
                 <div class="header-top__logo">
                     <img src="img/header/logo.png" alt="Logo">
                 </div>
@@ -131,7 +134,7 @@
                                 fill="#7491A5" fill-opacity="0.6" />
                         </svg>
                     </a>
-                    <div class="header-top__consult">
+                    <div class="header-top__consult" >
                         <a href="#" class="btn" onclick="popup()">Консультация</a>
                     </div>
 
@@ -145,11 +148,11 @@
 
             </div>
             <div class="header-main">
-                <h2 class="header-main__text">Трансплантация волос<br>
+                <h2 class="header-main__text" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Трансплантация волос<br>
                     в одной из лучших клиник Турции<br>
                     <span class="bold">Avrasya Hastanesi</span>
                 </h2>
-                <div class="header-main__sub">
+                <div class="header-main__sub" data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000">
                     <div class="header-main__subblock">
                         <svg>
                             <use xlink:href="img/svg/sprite.svg#hand"></use>
@@ -175,7 +178,7 @@
                         </span>
                     </div>
                 </div>
-                <a href="#" class="btn header-main-btn" onclick="popup()">Узнать больше</a>
+                <a href="#" class="btn header-main-btn" onclick="popup()" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">Узнать больше</a>
             </div>
             <div class="header-bottom">
 
@@ -199,10 +202,10 @@
     </header>
 
     <section class="reputation inner-wrap">
-        <h2 class="reputation__header section-header">Клиника с международной репутацией</h2>
-        <p class="reputation__text section-text">В Avrasya Hastanesi приезжают со всего мира. Передовые технологии в
+        <h2 class="reputation__header section-header" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Клиника с международной репутацией</h2>
+        <p class="reputation__text section-text" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">В Avrasya Hastanesi приезжают со всего мира. Передовые технологии в
             микрохирургии и опыт врачей гарантируют превосходную трансплантацию на долгие годы.</p>
-        <div class="reputation__advatages">
+        <div class="reputation__advatages" data-aos="fade-in" data-aos-delay="0" data-aos-duration="500">
             <div class="advantages-item">
                 <div class="advantages-item__icon">
                     <svg class="inline-svg-icon">
@@ -234,7 +237,7 @@
                 </p>
             </div>
         </div>
-        <div class="reputation__images">
+        <div class="reputation__images" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
 
             <div class="rep-group">
                 <div class="rep-1 rep-col">
@@ -283,7 +286,7 @@
         </div>
     </section>
 
-    <section class="doc">
+    <section class="doc" data-aos="fade-in" data-aos-delay="0" data-aos-duration="0">
 
         <div class="doc__image">
             <img src="img/doc/doc.png" alt="Doctor">
@@ -310,37 +313,37 @@
 
     <section class="fue">
         <div class="inner-wrap">
-            <h2 class="fue__header section-header">Машинный способ трансплантации, <br>или просто FUE</h2>
-            <p class="fue__text section-text">Благодаря бесшовной методике FUE (Follicular Unit Extraction) после
+            <h2 class="fue__header section-header" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Машинный способ трансплантации, <br>или просто FUE</h2>
+            <p class="fue__text section-text" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Благодаря бесшовной методике FUE (Follicular Unit Extraction) после
                 процедуры на коже головы не остается рубцов, так как работа ведется только с фолликулами.</p>
             <div class="fue__block">
-                <div class="fue__image">
+                <div class="fue__image" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                     <img src="img/fue/fue1.png" alt="Fue">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#fuenum1"></use>
                     </svg>
                 </div>
-                <p>При помощи специальной машинки из реципиентной зоны (обычно затылок) извлекаются графты - пучки
+                <p data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">При помощи специальной машинки из реципиентной зоны (обычно затылок) извлекаются графты - пучки
                     фолликул.</p>
             </div>
             <div class="fue__block">
-                <div class="fue__image">
+                <div class="fue__image" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                     <img src="img/fue/fue2.png" alt="Fue">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#fuenum2"></use>
                     </svg>
                 </div>
-                <p>Из графтов формируются отдельные фолликулы или фолликулярные группы и тщательно обрабатываются
+                <p data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">Из графтов формируются отдельные фолликулы или фолликулярные группы и тщательно обрабатываются
                     для последующей трансплантации.</p>
             </div>
             <div class="fue__block">
-                <div class="fue__image">
+                <div class="fue__image" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                     <img src="img/fue/fue3.png" alt="Fue">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#fuenum3"></use>
                     </svg>
                 </div>
-                <p>На коже головы формируются каналы и согласно намеченной карте вживляются подготовленные
+                <p data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">На коже головы формируются каналы и согласно намеченной карте вживляются подготовленные
                     фолликулы.</p>
             </div>
         </div>
@@ -359,7 +362,7 @@
 
 
     <section class="reviews inner-wrap">
-        <h2 class="reviews__header section-header">Вот что о нас думают <br>
+        <h2 class="reviews__header section-header" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Вот что о нас думают <br>
             пациенты Avrasya Hospital</h2>
         <div class="reviews__videos">
             <div class="big-video">
@@ -384,7 +387,7 @@
 
     <section class="consult">
         <div class="consult__wrap inner-wrap">
-            <div class="consult__form">
+            <div class="consult__form" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                 <h2 class="consult__header section-header">
                     Обращайтесь за консультацией
                 </h2>
@@ -394,8 +397,8 @@
 
                 </div>
                 <div class="consult__fields">
-                    <input type="text" name="Name" id="consult_name" placeholder="Ваше имя:">
-                    <input type="text" name="Phone" id="consult_phone" placeholder="Телефон:">
+                    <input type="text" name="Name" placeholder="Ваше имя:">
+                    <input type="text" name="Phone" placeholder="Телефон:">
                 </div>
                 <div class="consult__checkbox">
                     <label class="container">
@@ -406,17 +409,17 @@
                 </div>
                 <button class="consult__button btn" onclick="popup()">Хочу консультацию</button>
             </div>
-            <div class="consult__img">
+            <div class="consult__img" data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">
                 <img src="img/consult/consult_front_img.png" alt="Photo of FUE">
             </div>
         </div>
     </section>
 
     <section class="change">
-        <h2 class="change__header section-header">Измените внешность так, как вам хочется</h2>
-        <p class="change__text">Помимо очевидного лечения облысения вы также можете изменить и бороду, сделав ее
+        <h2 class="change__header section-header" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Измените внешность так, как вам хочется</h2>
+        <p class="change__text" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Помимо очевидного лечения облысения вы также можете изменить и бороду, сделав ее
             гуще и ровнее, либо же нарастить целиком.</p>
-        <div class="change__block-wrap">
+        <div class="change__block-wrap" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
             <div class="change__block" onclick="popup()">
                 <img src="img/change/change1.png" alt="">
                 <p class="change__range">До 1000 графтов</p>
@@ -437,11 +440,11 @@
     </section>
 
     <section class="cost inner-wrap">
-        <h2 class="cost__header section-header">В стоимость включено</h2>
-        <p class="cost__text">Стоимость включает в себя все базовые расходы в Турции и непосредственно сами
+        <h2 class="cost__header section-header" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">В стоимость включено</h2>
+        <p class="cost__text" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Стоимость включает в себя все базовые расходы в Турции и непосредственно сами
             медицинские услуги.
 
-            <div class="cost__group">
+            <div class="cost__group" data-aos="fade-in" data-aos-delay="0" data-aos-duration="500">
                 <div class="cost__item">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#cost1"></use>
@@ -484,25 +487,25 @@
 
     <section class="remember-wrap">
         <div class="remember inner-wrap">
-            <h2 class="remember__header section-header">Помните: мы всегда неподалеку</h2>
+            <h2 class="remember__header section-header" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">Помните: мы всегда неподалеку</h2>
             <p class="remember__text">Несмотря на то, что вы будете находиться в чужой стране, стоит помнить, что вы
                 здесь не одни.</p>
             <div class="remember__group">
-                <div class="remember__block">
+                <div class="remember__block" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#remember1"></use>
                     </svg>
                     <p>Во-первых, вам не нужно передвигаться по городу самостоятельно: вас всегда встретят и
                         подвезут, куда нужно.</p>
                 </div>
-                <div class="remember__block">
+                <div class="remember__block" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#remember2"></use>
                     </svg>
                     <p>Во-вторых, у вас под боком всегда будет переводчик, который подскажет, если у вас появятся
                         вопросы.</p>
                 </div>
-                <div class="remember__block">
+                <div class="remember__block" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
                     <svg>
                         <use xlink:href="img/svg/sprite.svg#remember3"></use>
                     </svg>
@@ -604,7 +607,7 @@
 
     <section class="consult repair">
         <div class="consult__wrap inner-wrap">
-            <div class="consult__form">
+            <div class="consult__form" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                 <h2 class="consult__header section-header">
                     Обращайтесь за консультацией
                 </h2>
@@ -614,8 +617,8 @@
 
                 </div>
                 <div class="consult__fields">
-                    <input type="text" name="Name" id="consult_name" placeholder="Ваше имя:">
-                    <input type="text" name="Phone" id="consult_phone" placeholder="Телефон:">
+                    <input type="text" name="Name" placeholder="Ваше имя:">
+                    <input type="text" name="Phone" placeholder="Телефон:">
                 </div>
                 <div class="consult__checkbox">
                     <label class="container">
@@ -626,7 +629,7 @@
                 </div>
                 <button class="consult__button btn" onclick="popup()">Хочу консультацию</button>
             </div>
-            <div class="consult__img">
+            <div class="consult__img" data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">
                 <img src="img/repair/repair-front.png" alt="Photo of FUE">
             </div>
         </div>
@@ -688,6 +691,7 @@
     <script type="text/javascript" src="libs/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
