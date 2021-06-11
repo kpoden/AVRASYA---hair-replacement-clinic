@@ -141,3 +141,7 @@ $(document).ready(function() {
       $('.popup').fadeOut();
       $('.background-mobile').removeClass("bgactive");
     });
+
+    $('.popup').on('click', function() {
+      popup(e);
+    })
