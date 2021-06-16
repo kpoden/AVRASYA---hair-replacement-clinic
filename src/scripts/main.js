@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
     
-    // wow js init
-    new WOW().init();
+    // AOS js init
     AOS.init({
       once: true
     });
@@ -109,10 +108,8 @@ $(document).ready(function() {
       $('.consult__fields input').blur( function(){
         if ($(this).attr('id')=='consult_name') {
           $(this).attr('placeholder', 'Ваше имя:');
-          console.log(this);
         } else {
           $(this).attr('placeholder', 'Телефон:');
-          console.log(111);
         }
       })
 
@@ -121,7 +118,6 @@ $(document).ready(function() {
         $(this).toggleClass('open').next().slideToggle();
         $('.infobank__title').not(this).removeClass('open').next().slideUp();
         $('.infobank__arrow', this).toggleClass('arrow-up');
-        console.log(this);
       }) 
 
 });
@@ -132,8 +128,6 @@ $(document).ready(function() {
       $('.background-mobile').addClass("bgactive");
       $('.background-mobile').fadeIn('fast');
       $('.popup').fadeIn();
-      e.preventDefault();
-      console.log(e);
     }
 
 
@@ -142,6 +136,7 @@ $(document).ready(function() {
       $('.background-mobile').removeClass("bgactive");
     });
 
-    $('.popup').on('click', function() {
-      popup(e);
+    $('.popupWindow').on('click', function(e) {
+      popup(this);
+      e.stopPropagation();
     })

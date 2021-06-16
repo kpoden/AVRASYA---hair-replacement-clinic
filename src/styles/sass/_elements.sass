@@ -72,7 +72,8 @@
 // mobile-menu
 .mobile-menu
     height: 100vh
-    width: 50%
+    width: 70%
+    max-width: 400px
     background-color: $light-grey
     position: fixed
     top: 0
@@ -81,7 +82,7 @@
     transition: .3s ease-in
     z-index: 1000
     box-shadow: 0 10px 40px rgba(0,0,0,.5)
-    padding: 50px 50px
+    padding: 50px 50px 
     display: none
     
     +mw1180
@@ -92,7 +93,7 @@
 
     &__phone
         margin-top: 25px
-        font-size: 2em
+        font-size: 1.5em
         display: block
         min-width: 290px 
         color: $beige
@@ -100,10 +101,12 @@
             border: 1px solid $beige
             border-radius: 50px
             padding: 10px 15px
-
             &:hover
                 color: $dark-grey
                 border: 1px solid $dark-grey
+
+            +mw480
+                font-size: 12px
         +mw979
             margin-top: -15px
             font-size: 1.7em
@@ -114,6 +117,8 @@
             font-size: 1.1em
         +mw480
             font-size: 1em
+
+
     .icons-group
         display: flex
         height: 70px
@@ -139,6 +144,11 @@
         bottom: 30px
         left: 50%
         transform: translateX(-50%)
+
+.active
+    transform: translateX(0)
+
+
     .mobile-soc-icon
         width: 36px
         height: 36px
@@ -152,8 +162,7 @@
                 border: 1px solid transparent
 
 
-.active
-    transform: translateX(0)
+
 
 
 .close 
@@ -196,12 +205,12 @@
     height: 100%
     background-color: rgba(0,0,0,0.4)
     display: none
-    +mw1180
-        display: block
+
 
 .bgactive
     z-index: 100
     opacity: 1
+    display: block
 
 .header-main-btn
     background: #BFAA86
@@ -301,11 +310,10 @@
     transform: translate(-50%, -50%)
     z-index: 2000
     width: 390px
-    height: 420px
     background-color: $white
     padding: 40px
     +mw480
-        width: 330px
+        width: 300px
         height: auto
     .close
         top: 10px !important
