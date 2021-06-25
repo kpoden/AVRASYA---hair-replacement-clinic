@@ -22,6 +22,15 @@ $(document).ready(function() {
         $('.background-mobile').removeClass("bgactive");
     });
 
+
+    $('.mobile-menu__item').on('click', function () {
+      if ($(window).width() < 1180) {
+        $('.mobile-menu').removeClass('active');
+        $('.background-mobile').removeClass("bgactive");
+        $('.popup').fadeOut();
+      }
+  })
+
     $(document).on('click', function(e) {
         if ($('.background-mobile').is(e.target)){
           $('.mobile-menu').removeClass('active');
@@ -140,3 +149,145 @@ $(document).ready(function() {
       popup(this);
       e.stopPropagation();
     })
+
+//submenu code
+    $('#dom-menu').on('mouseover', function(e) {
+      $('.firstlevel').addClass('active');
+    })
+    $('#dom-menu').on('mouseleave', function(e) {
+      $('.firstlevel').removeClass('active');
+    })
+
+  ////**** SCROLL TO SECTIONS FROM NAV ****////
+
+let navLinks = document.querySelectorAll('.nav__item a');
+
+navLinks.forEach(element => element.addEventListener('click', (e) => {
+    e.preventDefault();
+
+}))
+
+let mobNavLinks = document.querySelectorAll('.mobile-menu__item a');
+
+mobNavLinks.forEach(element => element.addEventListener('click', (e) => {
+    e.preventDefault();
+
+}))
+
+
+document.querySelectorAll(".nav-main").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".header"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-reputation").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".reputation"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-fue").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".fue"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-change").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".change"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-infobank").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".infobank"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-cost").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".cost"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-remember").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".remember"
+        }
+    })
+})
+})
+
+document.querySelectorAll(".nav-footer").forEach(function(e) {
+  console.log(e);
+e.addEventListener("click", () => {
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: ".footer"
+        }
+    })
+})
+})
+
+//*** UP BUTTON CODE ***//
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 780) {
+      $('#up-btn').fadeIn();
+  } else $('#up-btn').fadeOut();
+});
+
+document.getElementById("up-btn").addEventListener("click", () => {
+  gsap.to(window, {
+      duration: .5,
+      scrollTo: {
+          y: ".header"
+      }
+  })
+})
+//*** UP BUTTON CODE END***//
+
+
+
+////**** SCROLL TO SECTIONS FROM NAV END****////

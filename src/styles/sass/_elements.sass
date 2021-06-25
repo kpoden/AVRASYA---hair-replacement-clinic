@@ -71,7 +71,7 @@
             
 // mobile-menu
 .mobile-menu
-    height: 100vh
+    height: 101vh
     width: 70%
     max-width: 400px
     background-color: $light-grey
@@ -346,3 +346,33 @@
 
 
 // pop up window end
+.active
+    visibility: visible !important
+    transform: translateY(-5px) !important
+    opacity: 1 !important
+
+//up button
+#up-btn
+    display: none
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: $beige
+    position: fixed
+    bottom: 40px
+    right: 40px
+    cursor: pointer
+    z-index: 1000
+    opacity: .8
+    
+    &:after
+        content: ""
+        display: block
+        width: 8px
+        height: 8px
+        position: absolute
+        top: 55%
+        left: 50%
+        transform: translate(-50%, -50%) rotate(-135deg)
+        border: solid #ffffff
+        border-width: 0 2px 2px 0

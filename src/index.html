@@ -21,6 +21,7 @@
 
 <body>
     <div class="container">
+        <div id="up-btn"></div>
         <div class="popup">
             <h4>Заказать консультацию</h4>
             <div class="close popup-close"></div>
@@ -82,11 +83,11 @@
                     <div class="mobile-menu__address"></div>
                 </div>
                 <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item"><a href="#">Клиника</a></li>
-                    <li class="mobile-menu__item"><a href="#">Процедуры</a></li>
-                    <li class="mobile-menu__item"><a href="#">Цены</a></li>
-                    <li class="mobile-menu__item"><a href="#">Организация</a></li>
-                    <li class="mobile-menu__item"><a href="#">Контакты</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="nav-main">Клиника</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="nav-reputation">Процедуры</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="nav-cost">Цены</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="nav-remember">Организация</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="nav-footer">Контакты</a></li>
                 </ul>
             </div>
             <!-- mobile menu end-->
@@ -98,23 +99,24 @@
                 </div>
                 <div class="header-top__nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#">Клиника</a></li>
-                        <li class="nav__item"><a href="#">Процедуры</a>
+                        <li class="nav__item"><a href="#" class="nav-main">Клиника</a></li>
+                        <li class="nav__item"  id="dom-menu"><a href="#" class="nav-reputation">Процедуры</a>
                             <ul class="submenu firstlevel">
-                                <li><a href="#">Осмотр</a></li>
-                                <li class="opener"><a href="#">Пересадка</a>
+                                <li><a href="#" class="nav-fue">Осмотр</a></li>
+                                <li class="opener">
+                                    <a href="#" class="nav-change">Пересадка</a>
                                     <ul class="submenu seclevel">
-                                        <li><a href="#">До 1000 графов</a></li>
-                                        <li><a href="#">До 2000 графов</a></li>
-                                        <li><a href="#">До 3000 графов</a></li>
+                                        <li><a href="#" class="nav-change">До 1000 графов</a></li>
+                                        <li><a href="#" class="nav-change">До 2000 графов</a></li>
+                                        <li><a href="#" class="nav-change">До 3000 графов</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Профилактика</a></li>
+                                <li><a href="#" class="nav-infobank">Профилактика</a></li>
                             </ul>
                         </li>
-                        <li class="nav__item"><a href="#">Цены</a></li>
-                        <li class="nav__item"><a href="#">Организация</a></li>
-                        <li class="nav__item"><a href="#">Контакты</a></li>
+                        <li class="nav__item"><a href="#" class="nav-cost">Цены</a></li>
+                        <li class="nav__item"><a href="#" class="nav-remember">Организация</a></li>
+                        <li class="nav__item"><a href="#" class="nav-footer">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="header-top__contacts">
@@ -686,6 +688,8 @@
     <!-- end of container -->
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="libs/jquery.event.move.js"></script>
     <script src="libs/BeerSlider.js"></script>

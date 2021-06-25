@@ -51,10 +51,6 @@ header
                     position: relative
                     &:hover
                         color: $beige
-                    &:hover .firstlevel
-                        visibility: visible
-                        transform: translateY(-5px)
-                        opacity: 1
                     .opener:hover .seclevel
                             visibility: visible
                             transform: translateY(-5px)
@@ -62,6 +58,8 @@ header
 
             .submenu
                 display: block
+                cursor: pointer
+                z-index: 1000
                 width: 290px
                 height: auto
                 padding: 17px 24px 20px
@@ -87,7 +85,7 @@ header
                     content: ''
                     position: absolute
                     left: 130px
-                    top: -20px
+                    top: -18px
                     transform: rotate(180deg)
                     border: 10px solid transparent
                     border-top: 10px solid $white
@@ -137,7 +135,7 @@ header
     .header-main
         color: $white
         &__text
-            padding-top: 210px
+            margin-top: 210px
             padding-bottom: 45px
             font-weight: 500
             font-size: 2.15em
